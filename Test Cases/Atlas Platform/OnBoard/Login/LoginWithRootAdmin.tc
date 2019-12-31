@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Roles</name>
+   <name>LoginWithRootAdmin</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>66d29c85-d0e5-430c-afc5-c9a947e533af</testCaseGuid>
+   <testCaseGuid>c0faaf21-2b88-4afc-bdf2-6ebd971fcda9</testCaseGuid>
 </TestCaseEntity>
