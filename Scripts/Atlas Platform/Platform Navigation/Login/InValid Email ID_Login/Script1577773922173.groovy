@@ -28,3 +28,7 @@ WebUI.click(findTestObject('Login_Page/Page_/button_Log In'))
 
 WebUI.verifyElementPresent(findTestObject('Login_Page/Page_/div_Invalid Email Format'), 30)
 
+not_run: email err = WebUI.getCSSValue(findTestObject('Login_Page/Page_/div_Invalid Email Format'), '')
+
+hasProperty(findTestObject('Login_Page/Page_/div_Invalid Email Format'), 'Invalid Email Format')
+
