@@ -14,4 +14,29 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('http://dqfn4clx0bazt.cloudfront.net/')
+
+WebUI.setText(findTestObject('Login_Page/Page_/input_Email Address_form-control'), Email)
+
+WebUI.setText(findTestObject('Login_Page/Page_/input_Password_form-control'), Password)
+
+WebUI.click(findTestObject('Login_Page/Page_/button_Log In'))
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Dashboard/Page_/a_AUDIENCE'), 0)
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Dashboard/Page_/a_CONTENT'), 0)
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Dashboard/Page_/a_MESSAGING'), 0)
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Dashboard/Page_/a_REPORTING'), 0)
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Dashboard/Page_/a_ADMIN'), 0)
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Dashboard/Page_/div_Toyota'), 0)
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Dashboard/Page_/img'), 0)
 

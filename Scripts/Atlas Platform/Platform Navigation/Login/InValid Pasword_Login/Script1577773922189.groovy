@@ -20,9 +20,11 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://dqfn4clx0bazt.cloudfront.net/')
 
-WebUI.setText(findTestObject('Object Repository/LoginPage/loginpageemailtxtbox'), 'jayakumar@totient.co.in')
+WebUI.setText(findTestObject('Login_Page/Page_/input_Email Address_form-control'), Email)
 
-WebUI.setEncryptedText(findTestObject('Object Repository/LoginPage/loginpaepasswordtxtbox'), 'dY75oODjl60xa8W7XdEt7g==')
+WebUI.setText(findTestObject('Login_Page/Page_/input_Password_form-control'), Password)
 
-WebUI.click(findTestObject('LoginPage/loginpageloginbtn'))
+WebUI.click(findTestObject('Login_Page/Page_/button_Log In'))
+
+WebUI.verifyElementPresent(findTestObject('Login_Page/Page_/div_Enter Password'), 30)
 

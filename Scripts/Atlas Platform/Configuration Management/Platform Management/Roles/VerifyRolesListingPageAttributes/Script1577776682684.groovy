@@ -15,3 +15,82 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.callTestCase(findTestCase('Atlas Platform/OnBoard/Login/LoginWithRootAdmin'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/LoginPage/adminmenu'), 0)
+
+String str1 = WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/adminmenu'), 'color')
+
+WebUI.verifyMatch(str1, str1, true)
+
+String str2 = WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/adminmenu'), 'font-size')
+
+WebUI.verifyMatch(str2, str2, true)
+
+String str3 = WebUI.getText(findTestObject('Object Repository/LoginPage/adminmenu'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyMatch(str3, str3, true)
+
+//WebUI.verifyElementAttributeValue(findTestObject('Object Repository/LoginPage/adminmenu'), "class", "active", 10, FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Object Repository/LoginPage/audiencemenu'))
+
+String str4 = WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/audiencemenu'), 'color')
+
+WebUI.verifyMatch(str4, str4, true)
+
+String str5 = WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/audiencemenu'), 'font-size')
+
+WebUI.verifyMatch(str5, str5, true)
+
+String str6 = WebUI.getText(findTestObject('Object Repository/LoginPage/audiencemenu'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyMatch(str6, str6, true)
+
+WebUI.click(findTestObject('Object Repository/LoginPage/contentmeu'))
+
+WebUI.click(findTestObject('Object Repository/LoginPage/reportingmenu'))
+
+WebUI.click(findTestObject('Object Repository/LoginPage/adminmenu'))
+
+WebUI.click(findTestObject('Object Repository/LoginPage/organizationssubmenu'))
+
+WebUI.click(findTestObject('Object Repository/LoginPage/accountssubmenu'))
+
+WebUI.click(findTestObject('Object Repository/LoginPage/usersubmenu'))
+
+WebUI.click(findTestObject('Object Repository/LoginPage/rolessubmenu'))
+
+WebUI.click(findTestObject('Object Repository/LoginPage/featuressubmenu'))
+
+WebUI.click(findTestObject('Object Repository/LoginPage/licensingsubmenu'))
+
+WebUI.click(findTestObject('Object Repository/LoginPage/programssubmenu'))
+
+WebUI.click(findTestObject('Object Repository/LoginPage/affiliationssubmenu'))
+
+WebUI.click(findTestObject('Object Repository/LoginPage/eventssubmenu'))
+
+WebUI.click(findTestObject('Object Repository/LoginPage/compliancesubmenu'))
+
+WebUI.click(findTestObject('Object Repository/LoginPage/rolessubmenu'))
+
+WebUI.click(findTestObject('Object Repository/LoginPage/expandicon'))
+
+WebUI.click(findTestObject('Object Repository/LoginPage/rolemanagertext'))
+
+WebUI.click(findTestObject('Object Repository/LoginPage/SuperAdminTabs'))
+
+WebUI.click(findTestObject('Object Repository/LoginPage/bundleadminTabs'))
+
+WebUI.click(findTestObject('Object Repository/LoginPage/servicesadminTabs'))
+
+WebUI.click(findTestObject('Object Repository/LoginPage/organizationadminTabs'))
+
+WebUI.click(findTestObject('Object Repository/LoginPage/accountadminTabs'))
+
+WebUI.click(findTestObject('Object Repository/LoginPage/GSMSalesTabs'))
+
+WebUI.click(findTestObject('Object Repository/LoginPage/customersuccessTabs'))
+
+WebUI.closeBrowser()
+
