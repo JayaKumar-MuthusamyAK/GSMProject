@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>ValidateCSSValuesForRoleListing</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>e19b187b-37c2-403d-9680-32134db17c83</testSuiteGuid>
+   <testCaseLink>
+      <guid>1bbb0243-3aaf-47d2-b742-d13b2997e4b9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Atlas Platform/Configuration Management/Platform Management/Roles/VerifyRolesListingPageAttributes</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>fc94a7ee-1f35-444a-8964-a288a857c47b</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>7b997fed-766f-4b2a-a0c0-49a0e54c247e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>7e85bf96-df73-47d6-b3b0-20210c35c1d6</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>cef9711b-ae2f-45b1-a5ae-c68cd07bfc2b</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>
