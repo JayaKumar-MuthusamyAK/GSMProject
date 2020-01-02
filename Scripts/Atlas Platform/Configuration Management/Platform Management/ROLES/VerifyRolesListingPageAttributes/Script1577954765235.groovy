@@ -23,9 +23,9 @@ WebUI.callTestCase(findTestCase('Atlas Platform/OnBoard/Login/LoginWithRootAdmin
 
 WebUI.verifyElementPresent(findTestObject('HeaderMenus/adminmenu'), 0)
 
-WebUI.click(findTestObject('HeaderMenus/adminmenu'), 0)
+//WebUI.click(findTestObject('HeaderMenus/adminmenu'))
 
-WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('HeaderMenus/adminmenu'), 'color'), excelfile.getValue("element_color_in_RGBA", 1), true)
+WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('HeaderMenus/adminmenu'), 'color'), excelfile.getValue("element_color_in_RGBA", 1))
 
 WebUI.verifyMatch(WebUI.getCSSValue(findTestObject('HeaderMenus/adminmenu'), 'font-size'), excelfile.getValue("element_size", 1), true)
 
@@ -35,7 +35,7 @@ WebUI.verifyMatch(WebUI.getText(findTestObject('HeaderMenus/adminmenu'), Failure
 
 WebUI.click(findTestObject('HeaderMenus/audiencemenu'))
 
-WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('HeaderMenus/audiencemenu'), 'color'), excelfile.getValue("element_color_in_RGBA", 2), true)
+WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('HeaderMenus/audiencemenu'), 'color'), excelfile.getValue("element_color_in_RGBA", 2))
 
 WebUI.verifyMatch(WebUI.getCSSValue(findTestObject('HeaderMenus/audiencemenu'), 'font-size'), excelfile.getValue("element_size", 2), true)
 
@@ -44,7 +44,7 @@ WebUI.verifyMatch(WebUI.getText(findTestObject('HeaderMenus/audiencemenu'), Fail
 
 WebUI.click(findTestObject('HeaderMenus/contentmeu'))
 
-WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('HeaderMenus/contentmeu'), 'color'), excelfile.getValue("element_color_in_RGBA", 3), true)
+WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('HeaderMenus/contentmeu'), 'color'), excelfile.getValue("element_color_in_RGBA", 3))
 
 WebUI.verifyMatch(WebUI.getCSSValue(findTestObject('HeaderMenus/contentmeu'), 'font-size'), excelfile.getValue("element_size", 3), true)
 
@@ -53,7 +53,7 @@ WebUI.verifyMatch(WebUI.getText(findTestObject('HeaderMenus/contentmeu'), Failur
 
 WebUI.click(findTestObject('HeaderMenus/messagingmenu'))
 
-WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('HeaderMenus/messagingmenu'), 'color'), excelfile.getValue("element_color_in_RGBA", 4), true)
+WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('HeaderMenus/messagingmenu'), 'color'), excelfile.getValue("element_color_in_RGBA", 4))
 
 WebUI.verifyMatch(WebUI.getCSSValue(findTestObject('HeaderMenus/messagingmenu'), 'font-size'), excelfile.getValue("element_size", 4), true)
 
@@ -62,7 +62,7 @@ WebUI.verifyMatch(WebUI.getText(findTestObject('HeaderMenus/messagingmenu'), Fai
 
 WebUI.click(findTestObject('HeaderMenus/reportingmenu'))
 
-WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('HeaderMenus/reportingmenu'), 'color'), excelfile.getValue("element_color_in_RGBA", 5), true)
+WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('HeaderMenus/reportingmenu'), 'color'), excelfile.getValue("element_color_in_RGBA", 5))
 
 WebUI.verifyMatch(WebUI.getCSSValue(findTestObject('HeaderMenus/reportingmenu'), 'font-size'), excelfile.getValue("element_size", 5), true)
 
@@ -71,7 +71,7 @@ WebUI.verifyMatch(WebUI.getText(findTestObject('HeaderMenus/reportingmenu'), Fai
 
 WebUI.click(findTestObject('HeaderMenus/adminmenu'))
 
-WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('HeaderMenus/adminmenu'), 'color'), excelfile.getValue("element_color_in_RGBA", 6), true)
+WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('HeaderMenus/adminmenu'), 'color'), excelfile.getValue("element_color_in_RGBA", 6))
 
 WebUI.verifyMatch(WebUI.getCSSValue(findTestObject('HeaderMenus/adminmenu'), 'font-size'), excelfile.getValue("element_size", 6), true)
 
@@ -80,16 +80,15 @@ WebUI.verifyMatch(WebUI.getText(findTestObject('HeaderMenus/adminmenu'), Failure
 
 WebUI.click(findTestObject('Object Repository/LoginPage/organizationssubmenu'))
 
-WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/organizationssubmenu'), 'color'), excelfile.getValue("element_color_in_RGBA", 7), true)
+WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/organizationssubmenu'), 'color'), excelfile.getValue("element_color_in_RGBA", 7))
 
 WebUI.verifyMatch(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/organizationssubmenu'), 'font-size'), excelfile.getValue("element_size", 7), true)
 
 WebUI.verifyMatch(WebUI.getText(findTestObject('Object Repository/LoginPage/organizationssubmenu'), FailureHandling.CONTINUE_ON_FAILURE), excelfile.getValue("element_text", 7), true)
 
-
 WebUI.click(findTestObject('Object Repository/LoginPage/accountssubmenu'))
 
-WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/accountssubmenu'), 'color'), excelfile.getValue("element_color_in_RGBA", 8), true)
+WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/accountssubmenu'), 'color'), excelfile.getValue("element_color_in_RGBA", 8))
 
 WebUI.verifyMatch(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/accountssubmenu'), 'font-size'), excelfile.getValue("element_size", 8), true)
 
@@ -98,7 +97,7 @@ WebUI.verifyMatch(WebUI.getText(findTestObject('Object Repository/LoginPage/acco
 
 WebUI.click(findTestObject('Object Repository/LoginPage/usersubmenu'))
 
-WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/usersubmenu'), 'color'), excelfile.getValue("element_color_in_RGBA", 9), true)
+WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/usersubmenu'), 'color'), excelfile.getValue("element_color_in_RGBA", 9))
 
 WebUI.verifyMatch(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/usersubmenu'), 'font-size'), excelfile.getValue("element_size", 9), true)
 
@@ -109,7 +108,7 @@ WebUI.verifyMatch(WebUI.getText(findTestObject('Object Repository/LoginPage/user
 
 WebUI.click(findTestObject('Object Repository/LoginPage/featuressubmenu'))
 
-WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/featuressubmenu'), 'color'), excelfile.getValue("element_color_in_RGBA", 10), true)
+WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/featuressubmenu'), 'color'), excelfile.getValue("element_color_in_RGBA", 10))
 
 WebUI.verifyMatch(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/featuressubmenu'), 'font-size'), excelfile.getValue("element_size", 10), true)
 
@@ -118,7 +117,7 @@ WebUI.verifyMatch(WebUI.getText(findTestObject('Object Repository/LoginPage/feat
 
 WebUI.click(findTestObject('Object Repository/LoginPage/licensingsubmenu'))
 
-WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/licensingsubmenu'), 'color'), excelfile.getValue("element_color_in_RGBA", 11), true)
+WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/licensingsubmenu'), 'color'), excelfile.getValue("element_color_in_RGBA", 11))
 
 WebUI.verifyMatch(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/licensingsubmenu'), 'font-size'), excelfile.getValue("element_size", 11), true)
 
@@ -127,7 +126,7 @@ WebUI.verifyMatch(WebUI.getText(findTestObject('Object Repository/LoginPage/lice
 
 WebUI.click(findTestObject('Object Repository/LoginPage/programssubmenu'))
 
-WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/programssubmenu'), 'color'), excelfile.getValue("element_color_in_RGBA", 12), true)
+WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/programssubmenu'), 'color'), excelfile.getValue("element_color_in_RGBA", 12))
 
 WebUI.verifyMatch(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/programssubmenu'), 'font-size'), excelfile.getValue("element_size", 12), true)
 
@@ -136,16 +135,16 @@ WebUI.verifyMatch(WebUI.getText(findTestObject('Object Repository/LoginPage/prog
 
 WebUI.click(findTestObject('Object Repository/LoginPage/affiliationssubmenu'))
 
-WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/programssubmenu'), 'color'), excelfile.getValue("element_color_in_RGBA", 13), true)
+WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/affiliationssubmenu'), 'color'), excelfile.getValue("element_color_in_RGBA", 13))
 
-WebUI.verifyMatch(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/programssubmenu'), 'font-size'), excelfile.getValue("element_size", 13), true)
+WebUI.verifyMatch(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/affiliationssubmenu'), 'font-size'), excelfile.getValue("element_size", 13), true)
 
-WebUI.verifyMatch(WebUI.getText(findTestObject('Object Repository/LoginPage/programssubmenu'), FailureHandling.CONTINUE_ON_FAILURE), excelfile.getValue("element_text", 13), true)
+WebUI.verifyMatch(WebUI.getText(findTestObject('Object Repository/LoginPage/affiliationssubmenu'), FailureHandling.CONTINUE_ON_FAILURE), excelfile.getValue("element_text", 13), true)
 
 
 WebUI.click(findTestObject('Object Repository/LoginPage/eventssubmenu'))
 
-WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/eventssubmenu'), 'color'), excelfile.getValue("element_color_in_RGBA", 14), true)
+WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/eventssubmenu'), 'color'), excelfile.getValue("element_color_in_RGBA", 14))
 
 WebUI.verifyMatch(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/eventssubmenu'), 'font-size'), excelfile.getValue("element_size", 14), true)
 
@@ -154,7 +153,7 @@ WebUI.verifyMatch(WebUI.getText(findTestObject('Object Repository/LoginPage/even
 
 WebUI.click(findTestObject('Object Repository/LoginPage/compliancesubmenu'))
 
-WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/compliancesubmenu'), 'color'), excelfile.getValue("element_color_in_RGBA", 15), true)
+WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/compliancesubmenu'), 'color'), excelfile.getValue("element_color_in_RGBA", 15))
 
 WebUI.verifyMatch(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/compliancesubmenu'), 'font-size'), excelfile.getValue("element_size", 15), true)
 
@@ -163,7 +162,7 @@ WebUI.verifyMatch(WebUI.getText(findTestObject('Object Repository/LoginPage/comp
 
 WebUI.click(findTestObject('Object Repository/LoginPage/rolessubmenu'))
 
-WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/rolessubmenu'), 'color'), excelfile.getValue("element_color_in_RGBA", 16), true)
+WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/rolessubmenu'), 'color'), excelfile.getValue("element_color_in_RGBA", 16))
 
 WebUI.verifyMatch(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/rolessubmenu'), 'font-size'), excelfile.getValue("element_size", 16), true)
 
@@ -174,7 +173,7 @@ WebUI.click(findTestObject('Object Repository/LoginPage/expandicon'))
 
 WebUI.click(findTestObject('Object Repository/LoginPage/rolemanagertext'))
 
-WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/rolemanagertext'), 'color'), excelfile.getValue("element_color_in_RGBA", 17), true)
+WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/rolemanagertext'), 'color'), excelfile.getValue("element_color_in_RGBA", 17))
 
 WebUI.verifyMatch(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/rolemanagertext'), 'font-size'), excelfile.getValue("element_size", 17), true)
 
@@ -183,65 +182,65 @@ WebUI.verifyMatch(WebUI.getText(findTestObject('Object Repository/LoginPage/role
 
 WebUI.click(findTestObject('Object Repository/LoginPage/SuperAdminTabs'))
 
-WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/SuperAdminTabs'), 'color'), excelfile.getValue("element_color_in_RGBA", 18), true)
+WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/SuperAdminTabs'), 'color'), excelfile.getValue("element_color_in_RGBA", 18))
 
 WebUI.verifyMatch(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/SuperAdminTabs'), 'font-size'), excelfile.getValue("element_size", 18), true)
 
-WebUI.verifyMatch(WebUI.getText(findTestObject('Object Repository/LoginPage/SuperAdminTabs'), FailureHandling.CONTINUE_ON_FAILURE).replaceAll("^[0-9\\s]", "").trim(), excelfile.getValue("element_text", 18), true)
+WebUI.verifyMatch(WebUI.getText(findTestObject('Object Repository/LoginPage/SuperAdminTabs'), FailureHandling.CONTINUE_ON_FAILURE).replaceAll("^[\\s\\.\\d]+", "").trim(), excelfile.getValue("element_text", 18), true)
 
 
 WebUI.click(findTestObject('Object Repository/LoginPage/bundleadminTabs'))
 
-WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/bundleadminTabs'), 'color'), excelfile.getValue("element_color_in_RGBA", 19), true)
+WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/bundleadminTabs'), 'color'), excelfile.getValue("element_color_in_RGBA", 19))
 
 WebUI.verifyMatch(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/bundleadminTabs'), 'font-size'), excelfile.getValue("element_size", 19), true)
 
-WebUI.verifyMatch(WebUI.getText(findTestObject('Object Repository/LoginPage/bundleadminTabs'), FailureHandling.CONTINUE_ON_FAILURE).replaceAll("^[0-9\\s]", "").trim(), excelfile.getValue("element_text", 19), true)
+WebUI.verifyMatch(WebUI.getText(findTestObject('Object Repository/LoginPage/bundleadminTabs'), FailureHandling.CONTINUE_ON_FAILURE).replaceAll("^[\\s\\.\\d]+", "").trim(), excelfile.getValue("element_text", 19), true)
 
 
 WebUI.click(findTestObject('Object Repository/LoginPage/servicesadminTabs'))
 
-WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/servicesadminTabs'), 'color'), excelfile.getValue("element_color_in_RGBA", 20), true)
+WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/servicesadminTabs'), 'color'), excelfile.getValue("element_color_in_RGBA", 20))
 
 WebUI.verifyMatch(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/servicesadminTabs'), 'font-size'), excelfile.getValue("element_size", 20), true)
 
-WebUI.verifyMatch(WebUI.getText(findTestObject('Object Repository/LoginPage/servicesadminTabs'), FailureHandling.CONTINUE_ON_FAILURE).replaceAll("^[0-9\\s]", "").trim(), excelfile.getValue("element_text", 20), true)
+WebUI.verifyMatch(WebUI.getText(findTestObject('Object Repository/LoginPage/servicesadminTabs'), FailureHandling.CONTINUE_ON_FAILURE).replaceAll("^[\\s\\.\\d]+", "").trim(), excelfile.getValue("element_text", 20), true)
 
 
 WebUI.click(findTestObject('Object Repository/LoginPage/organizationadminTabs'))
 
-WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/organizationadminTabs'), 'color'), excelfile.getValue("element_color_in_RGBA", 21), true)
+WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/organizationadminTabs'), 'color'), excelfile.getValue("element_color_in_RGBA", 21))
 
 WebUI.verifyMatch(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/organizationadminTabs'), 'font-size'), excelfile.getValue("element_size", 21), true)
 
-WebUI.verifyMatch(WebUI.getText(findTestObject('Object Repository/LoginPage/organizationadminTabs'), FailureHandling.CONTINUE_ON_FAILURE).replaceAll("^[0-9\\s]", "").trim(), excelfile.getValue("element_text", 21), true)
+WebUI.verifyMatch(WebUI.getText(findTestObject('Object Repository/LoginPage/organizationadminTabs'), FailureHandling.CONTINUE_ON_FAILURE).replaceAll("^[\\s\\.\\d]+", "").trim(), excelfile.getValue("element_text", 21), true)
 
 
 WebUI.click(findTestObject('Object Repository/LoginPage/accountadminTabs'))
 
-WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/accountadminTabs'), 'color'), excelfile.getValue("element_color_in_RGBA", 22), true)
+WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/accountadminTabs'), 'color'), excelfile.getValue("element_color_in_RGBA", 22))
 
 WebUI.verifyMatch(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/accountadminTabs'), 'font-size'), excelfile.getValue("element_size", 22), true)
 
-WebUI.verifyMatch(WebUI.getText(findTestObject('Object Repository/LoginPage/accountadminTabs'), FailureHandling.CONTINUE_ON_FAILURE).replaceAll("^[0-9\\s]", "").trim(), excelfile.getValue("element_text", 22), true)
+WebUI.verifyMatch(WebUI.getText(findTestObject('Object Repository/LoginPage/accountadminTabs'), FailureHandling.CONTINUE_ON_FAILURE).replaceAll("^[\\s\\.\\d]+", "").trim(), excelfile.getValue("element_text", 22), true)
 
 
 WebUI.click(findTestObject('Object Repository/LoginPage/GSMSalesTabs'))
 
-WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/GSMSalesTabs'), 'color'), excelfile.getValue("element_color_in_RGBA", 23), true)
+WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/GSMSalesTabs'), 'color'), excelfile.getValue("element_color_in_RGBA", 23))
 
 WebUI.verifyMatch(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/GSMSalesTabs'), 'font-size'), excelfile.getValue("element_size", 23), true)
 
-WebUI.verifyMatch(WebUI.getText(findTestObject('Object Repository/LoginPage/GSMSalesTabs'), FailureHandling.CONTINUE_ON_FAILURE).replaceAll("^[0-9\\s]", "").trim(), excelfile.getValue("element_text", 23), true)
+WebUI.verifyMatch(WebUI.getText(findTestObject('Object Repository/LoginPage/GSMSalesTabs'), FailureHandling.CONTINUE_ON_FAILURE).replaceAll("^[\\s\\.\\d]+", "").trim(), excelfile.getValue("element_text", 23), true)
 
 
 WebUI.click(findTestObject('Object Repository/LoginPage/customersuccessTabs'))
 
-WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/customersuccessTabs'), 'color'), excelfile.getValue("element_color_in_RGBA", 24), true)
+WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/customersuccessTabs'), 'color'), excelfile.getValue("element_color_in_RGBA", 24))
 
 WebUI.verifyMatch(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/customersuccessTabs'), 'font-size'), excelfile.getValue("element_size", 24), true)
 
-WebUI.verifyMatch(WebUI.getText(findTestObject('Object Repository/LoginPage/customersuccessTabs'), FailureHandling.CONTINUE_ON_FAILURE).replaceAll("^[0-9\\s]", "").trim(), excelfile.getValue("element_text", 24), true)
+WebUI.verifyMatch(WebUI.getText(findTestObject('Object Repository/LoginPage/customersuccessTabs'), FailureHandling.CONTINUE_ON_FAILURE).replaceAll("^[\\s\\.\\d]+", "").trim(), excelfile.getValue("element_text", 24), true)
 
 WebUI.closeBrowser()
 
