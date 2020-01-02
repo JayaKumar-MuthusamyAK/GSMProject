@@ -14,4 +14,17 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('http://dqfn4clx0bazt.cloudfront.net/')
+
+WebUI.setText(findTestObject('ROLES/Role_Navigation/input_Email Address_form-control'), 'uday@totient.co.in')
+
+WebUI.setEncryptedText(findTestObject('ROLES/Role_Navigation/input_Password_form-control'), 'h+V9yBIzuVU=')
+
+WebUI.click(findTestObject('ROLES/Role_Navigation/button_Log In'))
+
+WebUI.click(findTestObject('ROLES/Role_Navigation/a_ADMIN'))
 
