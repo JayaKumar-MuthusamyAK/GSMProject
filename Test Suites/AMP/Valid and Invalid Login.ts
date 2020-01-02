@@ -22,7 +22,7 @@
             <iterationType>RANGE</iterationType>
             <value>19-38</value>
          </iterationEntity>
-         <testDataId>Data Files/AMP</testDataId>
+         <testDataId>Data Files/AMP_Y</testDataId>
       </testDataLink>
       <variableLink>
          <testDataLinkId>b5d104d9-224b-45e3-abc9-161610c14bbb</testDataLinkId>
@@ -49,7 +49,7 @@
             <iterationType>RANGE</iterationType>
             <value>2-17</value>
          </iterationEntity>
-         <testDataId>Data Files/AMP</testDataId>
+         <testDataId>Data Files/AMP_Y</testDataId>
       </testDataLink>
       <variableLink>
          <testDataLinkId>2bc1f08f-68c5-44a7-8502-215dbb606427</testDataLinkId>
@@ -76,7 +76,7 @@
             <iterationType>RANGE</iterationType>
             <value>40-54</value>
          </iterationEntity>
-         <testDataId>Data Files/AMP</testDataId>
+         <testDataId>Data Files/AMP_Y</testDataId>
       </testDataLink>
       <variableLink>
          <testDataLinkId>0efc158f-ae4e-4533-ae2e-1d9eb23397ae</testDataLinkId>

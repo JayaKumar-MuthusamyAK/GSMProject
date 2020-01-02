@@ -18,31 +18,11 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('http://dqfn4clx0bazt.cloudfront.net')
+WebUI.navigateToUrl('http://dqfn4clx0bazt.cloudfront.net/')
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Login_Page/Page_/div_Email Address'), 0)
+WebUI.setText(findTestObject('Object Repository/LoginPage/loginpageemailtxtbox'), 'jayakumar@totient.co.in')
 
-WebUI.getCSSValue(findTestObject('Login_Page/Page_/div_Email Address'), '')
+WebUI.setEncryptedText(findTestObject('Object Repository/LoginPage/loginpaepasswordtxtbox'), 'dY75oODjl60xa8W7XdEt7g==')
 
-WebUI.acceptAlert()
-
-WebUI.acceptAlert()
-
-WebUI.acceptAlert()
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Login_Page/Page_/div_Password'), 0)
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Login_Page/Page_/svg_Email Address_svg-icon'), 0)
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Login_Page/Page_/svg_Password_svg-icon'), 0)
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Login_Page/Page_/div_ 2019 GS Marketing All Rights Reserved    Contact'), 
-    0)
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Login_Page/Page_/div_Email AddressPasswordLog InForgot Password'), 
-    0)
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Login_Page/Page_/button_Log In'), 0)
-
-WebUI.verifyElementPresent(findTestObject('Login_Page/Page_/div_Forgot Password'), 0)
+WebUI.click(findTestObject('LoginPage/loginpageloginbtn'))
 

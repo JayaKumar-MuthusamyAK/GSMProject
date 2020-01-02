@@ -13,9 +13,13 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+<<<<<<< HEAD
 import groovy.json.internal.Exceptions as Exceptions
 import internal.GlobalVariable as GlobalVariable
 import org.junit.After as After
+=======
+import internal.GlobalVariable as GlobalVariable
+>>>>>>> branch 'master' of https://github.com/JayaKumar-MuthusamyAK/GSMProject.git
 import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
