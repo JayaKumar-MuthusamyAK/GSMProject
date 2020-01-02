@@ -5,4 +5,32 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>eecd32d9-ac84-485e-aafa-dab6be6f1343</testCaseGuid>
+   <variable>
+      <defaultValue>'rgba(27, 32, 92, 1)'</defaultValue>
+      <description></description>
+      <id>fc94a7ee-1f35-444a-8964-a288a857c47b</id>
+      <masked>false</masked>
+      <name>element_color_in_RGBA</name>
+   </variable>
+   <variable>
+      <defaultValue>'10px'</defaultValue>
+      <description></description>
+      <id>7b997fed-766f-4b2a-a0c0-49a0e54c247e</id>
+      <masked>false</masked>
+      <name>element_size</name>
+   </variable>
+   <variable>
+      <defaultValue>'ADMIN'</defaultValue>
+      <description></description>
+      <id>7e85bf96-df73-47d6-b3b0-20210c35c1d6</id>
+      <masked>false</masked>
+      <name>element_text</name>
+   </variable>
+   <variable>
+      <defaultValue>'#8d979a'</defaultValue>
+      <description></description>
+      <id>cef9711b-ae2f-45b1-a5ae-c68cd07bfc2b</id>
+      <masked>false</masked>
+      <name>element_color</name>
+   </variable>
 </TestCaseEntity>

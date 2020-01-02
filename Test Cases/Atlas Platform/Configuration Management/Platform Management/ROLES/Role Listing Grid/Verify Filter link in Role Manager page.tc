@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Filter link in Role Manager page</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>72ed62a1-e4c1-4940-b69b-3a5513910dd1</testCaseGuid>
+</TestCaseEntity>

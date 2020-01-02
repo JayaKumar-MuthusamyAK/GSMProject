@@ -13,7 +13,13 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+<<<<<<< HEAD
 import internal.GlobalVariable as GlobalVariable
+=======
+import groovy.json.internal.Exceptions as Exceptions
+import internal.GlobalVariable as GlobalVariable
+import org.junit.After as After
+>>>>>>> f52e67f5aa6e1df5d871f8eba4e074a3f9b3468a
 import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
