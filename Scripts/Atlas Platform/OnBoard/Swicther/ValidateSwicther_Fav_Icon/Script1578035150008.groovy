@@ -31,6 +31,6 @@ WebUI.click(findTestObject('Swicther/favorite_icon'))
 
 String color2 = WebUI.getCSSValue(findTestObject('Swicther/favorite_icon_check'), 'd')
 
-WebUI.verifyEqual("path(\"M 6.01 5 L 10 8.955 L 8.946 10 L 5 6.09 L 1.054 10 L 0 8.955 L 3.991 5 L 0 1.045 L 1.054 0 L 5 3.91 L 8.946 0 L 10 1.045 Z\")", color2)
+WebUI.verifyEqual(path, color2)
 
 
