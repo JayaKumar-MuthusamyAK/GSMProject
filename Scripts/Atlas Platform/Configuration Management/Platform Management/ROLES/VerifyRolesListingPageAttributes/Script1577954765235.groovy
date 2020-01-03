@@ -16,7 +16,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Object excelfile = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\Dell\\Katalon Studio\\SampleTestProject\\Data Files\\xlsx files\\AMP.xlsx', 
+Object excelfile = ExcelFactory.getExcelDataWithDefaultSheet(System.getProperty("user.dir")+'\\Data Files\\xlsx files\\AMP.xlsx', 
     'RoleListingPageAttributes', true)
 
 WebUI.callTestCase(findTestCase('Atlas Platform/OnBoard/Login/LoginWithRootAdmin'), [:], FailureHandling.STOP_ON_FAILURE)
