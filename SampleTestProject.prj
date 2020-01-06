@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
    <description></description>
-   <name>SampleTestProject</name>
+   <name>GSMProject</name>
    <tag></tag>
    <UUID>dd0acae7-e2cb-4939-aaa2-9ec3c6fe2c13</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
-   <projectFileLocation>C:\Users\Dell\Katalon Studio\SampleTestProject\SampleTestProject.prj</projectFileLocation>
+   <projectFileLocation>C:\Users\Dell\git\GSMProject\SampleTestProject.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>

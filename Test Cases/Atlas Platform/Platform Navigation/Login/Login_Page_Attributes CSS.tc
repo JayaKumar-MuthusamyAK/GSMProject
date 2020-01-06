@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>VerifyRolesListingPageAttributes</name>
+   <name>Login_Page_Attributes CSS</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>eecd32d9-ac84-485e-aafa-dab6be6f1343</testCaseGuid>
+   <testCaseGuid>4b4a1d81-302e-49e6-acd1-d8d5c1065471</testCaseGuid>
 </TestCaseEntity>

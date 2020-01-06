@@ -22,31 +22,31 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://dqfn4clx0bazt.cloudfront.net/')
 
-WebUI.setText(findTestObject('Login_Page/Page_/input_Email Address_form-control'), Email)
+WebUI.setText(findTestObject('Login_Page/Page_/email address text box'), Email)
 
-WebUI.setText(findTestObject('Login_Page/Page_/input_Password_form-control'), Password)
+WebUI.setText(findTestObject('Login_Page/Page_/Password placeholder'), Password)
 
-WebUI.click(findTestObject('Login_Page/Page_/button_Log In'))
+WebUI.click(findTestObject('Login_Page/Page_/Log In button'))
 
 WebUI.verifyElementPresent(findTestObject('Login_Page/Page_/div_Invalid Email Format'), 30)
 
-WebUI.verifyElementText(findTestObject('Login_Page/Page_/div_Invalid Email Format'), findTestData('AMP_Y').getValue(6, 1), 
-    FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Login_Page/Page_/div_Invalid Email Format'), findTestData('Login page CSS').getValue(
+        2, 2), FailureHandling.CONTINUE_ON_FAILURE)
 
-String email_clr_act = WebUI.getCSSValue(findTestObject('Login_Page/Page_/div_Invalid Email Format'), findTestData('AMP_Y').getValue(
-        5, 2))
+String email_clr_act = WebUI.getCSSValue(findTestObject('Login_Page/Page_/div_Invalid Email Format'), findTestData('Login page CSS').getValue(
+        3, 1))
 
-WebUI.verifyEqual(email_clr_act, findTestData('AMP_Y').getValue(6, 2), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyEqual(email_clr_act, findTestData('Login page CSS').getValue(3, 2), FailureHandling.CONTINUE_ON_FAILURE)
 
 String email_err_font_size = WebUI.getCSSValue(findTestObject('Login_Page/Page_/div_Invalid Email Format'), findTestData(
-        'AMP').getValue(5, 3))
+        'Login page CSS').getValue(4, 1))
 
-WebUI.verifyEqual(email_err_font_size, findTestData('AMP_Y').getValue(6, 3), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyEqual(email_err_font_size, findTestData('Login page CSS').getValue(4, 2), FailureHandling.CONTINUE_ON_FAILURE)
 
 String email_err_font_fmly = WebUI.getCSSValue(findTestObject('Login_Page/Page_/div_Invalid Email Format'), findTestData(
-        'AMP').getValue(5, 4))
+        'Login page CSS').getValue(5, 1))
 
-WebUI.verifyEqual(email_err_font_fmly, findTestData('AMP_Y').getValue(6, 4), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyEqual(email_err_font_fmly, findTestData('Login page CSS').getValue(5, 2), FailureHandling.CONTINUE_ON_FAILURE)
 
 println(email_clr_act)
 
