@@ -15,19 +15,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('Atlas Platform/OnBoard/Login/LoginWithRootAdmin'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl('http://dqfn4clx0bazt.cloudfront.net/')
+WebUI.click(findTestObject('Swicther/swicthermenutext'))
 
-'Verifing AMP Image SRC Attribute'
-WebUI.verifyElementPresent(findTestObject('HeaderMenus/ampimage'), 0)
+WebUI.click(findTestObject('Swicther/accounts_tab_swicther'))
 
-WebUI.navigateToUrl(svgURL)
-
-'Verifing the AMP Images D attributes values'
-WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('LoginPage/ampimagesvg'), 'd'), path)
-
-WebUI.verifyElementInViewport(findTestObject('LoginPage/backgroundImage'), 0)
-
-CustomKeywords.'web.CustomKeyword.CompareBothImages'(findTestObject('LoginPage/backgroundImage'), 'D:\\bck.png')
-
+WebUI.verifyElementText(findTestObject('Swicther/FirstLastViewedTextForAccounts'), 'Last Visited Today')

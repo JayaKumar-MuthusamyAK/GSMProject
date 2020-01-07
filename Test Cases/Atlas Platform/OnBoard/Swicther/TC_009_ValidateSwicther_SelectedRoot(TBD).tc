@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Validate_Swicth_Organization</name>
+   <name>TC_009_ValidateSwicther_SelectedRoot(TBD)</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>b1edab0f-fac2-4e0f-a2c5-7cebf0838135</testCaseGuid>
+   <testCaseGuid>3505b839-f59e-44d6-aa95-e91d651f4fa6</testCaseGuid>
 </TestCaseEntity>

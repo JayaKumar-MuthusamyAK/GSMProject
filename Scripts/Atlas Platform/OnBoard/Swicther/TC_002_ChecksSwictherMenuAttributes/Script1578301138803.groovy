@@ -15,19 +15,19 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('Atlas Platform/OnBoard/Login/LoginWithRootAdmin'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl('http://dqfn4clx0bazt.cloudfront.net/')
+WebUI.click(findTestObject('Swicther/swicthermenutext'))
 
-'Verifing AMP Image SRC Attribute'
-WebUI.verifyElementPresent(findTestObject('HeaderMenus/ampimage'), 0)
+WebUI.verifyElementText(findTestObject('Swicther/root_tab_swicther'), 'Root')
 
-WebUI.navigateToUrl(svgURL)
+WebUI.verifyElementText(findTestObject('Swicther/accounts_tab_swicther'), 'Accounts')
 
-'Verifing the AMP Images D attributes values'
-WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('LoginPage/ampimagesvg'), 'd'), path)
+WebUI.verifyElementText(findTestObject('Swicther/organization_tab_swicther'), 'Organizations')
 
-WebUI.verifyElementInViewport(findTestObject('LoginPage/backgroundImage'), 0)
+WebUI.verifyElementText(findTestObject('Swicther/favorites_tabs_swicther'), 'Favorites')
 
-CustomKeywords.'web.CustomKeyword.CompareBothImages'(findTestObject('LoginPage/backgroundImage'), 'D:\\bck.png')
+WebUI.verifyElementInViewport(findTestObject('Swicther/search_in_swicther'), 0)
+
+WebUI.verifyElementInViewport(findTestObject('Swicther/closeIcon'), 0)
 

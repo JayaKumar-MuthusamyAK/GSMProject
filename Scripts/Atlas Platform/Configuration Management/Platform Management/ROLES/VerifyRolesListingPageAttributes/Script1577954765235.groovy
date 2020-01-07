@@ -16,7 +16,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Object excelfile = ExcelFactory.getExcelDataWithDefaultSheet(System.getProperty("user.dir")+'\\Data Files\\xlsx files\\AMP.xlsx', 
+Object excelfile = ExcelFactory.getExcelDataWithDefaultSheet(System.getProperty('user.dir') + '\\Data Files\\xlsx files\\AMP.xlsx', 
     'RoleListingPageAttributes', true)
 
 WebUI.callTestCase(findTestCase('Atlas Platform/OnBoard/Login/LoginWithRootAdmin'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -306,6 +306,41 @@ WebUI.verifyMatch(WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/
 
 WebUI.verifyMatch(WebUI.getText(findTestObject('Object Repository/LoginPage/customersuccessTabs'), FailureHandling.CONTINUE_ON_FAILURE).replaceAll(
         '^[\\s\\.\\d]+', '').trim(), excelfile.getValue('element_text', 24), true)
+
+WebUI.verifyMatch(WebUI.getCSSValue(findTestObject('HeaderMenus/helpIcon'), 'font-size'), excelfile.getValue('element_size', 
+        25), true)
+
+WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('HeaderMenus/helpIcon'), 'color'), excelfile.getValue(
+        'element_color_in_RGBA', 25))
+
+WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('HeaderMenus/helpIcon'), 'd').toLowerCase(), excelfile.getValue('icon_value', 25).toLowerCase())
+
+WebUI.verifyMatch(WebUI.getCSSValue(findTestObject('HeaderMenus/tenderIcon'), 'font-size'), excelfile.getValue('element_size',
+	26), true)
+
+WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('HeaderMenus/tenderIcon'), 'color'), excelfile.getValue(
+	'element_color_in_RGBA', 26))
+
+WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('HeaderMenus/tenderIcon'), 'd'), excelfile.getValue(
+	'icon_value', 26))
+
+WebUI.verifyMatch(WebUI.getCSSValue(findTestObject('HeaderMenus/notificationIcon'), 'font-size'), excelfile.getValue('element_size',
+	27), true)
+
+WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('HeaderMenus/notificationIcon'), 'color'), excelfile.getValue(
+	'element_color_in_RGBA', 27))
+
+WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('HeaderMenus/notificationIcon'), 'd'), excelfile.getValue(
+	'icon_value', 27))
+
+WebUI.verifyMatch(WebUI.getCSSValue(findTestObject('HeaderMenus/profileIcon'), 'font-size'), excelfile.getValue('element_size',
+	28), true)
+
+WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('HeaderMenus/profileIcon'), 'color'), excelfile.getValue(
+	'element_color_in_RGBA', 28))
+
+WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('HeaderMenus/profileIcon'), 'd'), excelfile.getValue(
+	'icon_value', 28))
 
 WebUI.closeBrowser()
 

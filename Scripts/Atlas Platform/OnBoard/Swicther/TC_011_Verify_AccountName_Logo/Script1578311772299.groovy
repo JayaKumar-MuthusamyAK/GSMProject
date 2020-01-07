@@ -3,6 +3,9 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+
+import org.openqa.selenium.WebElement
+
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -11,23 +14,33 @@ import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('Atlas Platform/OnBoard/Login/LoginWithRootAdmin'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl('http://dqfn4clx0bazt.cloudfront.net/')
+WebUI.click(findTestObject('Swicther/swicthermenutext'))
 
-'Verifing AMP Image SRC Attribute'
-WebUI.verifyElementPresent(findTestObject('HeaderMenus/ampimage'), 0)
+WebUI.click(findTestObject('Swicther/accounts_tab_swicther'))
 
-WebUI.navigateToUrl(svgURL)
+List<WebElement> listofoptions = WebUiCommonHelper.findWebElements(findTestObject('Swicther/accounts_tab_all_values'), 5)
 
-'Verifing the AMP Images D attributes values'
-WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('LoginPage/ampimagesvg'), 'd'), path)
+List<WebElement> listofoptions = WebUiCommonHelper.findWebElements(findTestObject('Swicther/accounts_tab_all_icons'), 5)
 
-WebUI.verifyElementInViewport(findTestObject('LoginPage/backgroundImage'), 0)
+List<WebElement> listofoptioninstring = new ArrayList<String>()
 
-CustomKeywords.'web.CustomKeyword.CompareBothImages'(findTestObject('LoginPage/backgroundImage'), 'D:\\bck.png')
+for (WebElement ele : listofoptions) {
+	listofoptioninstring.addAll(ele.getText())
+}
 
+String verify_accountName = CustomKeywords.'web.CustomKeyword.getrandomStingValue'(listofoptioninstring)
+
+for(int h=0;h<listofoptions.size();h++){
+	
+	if(listofoptions.get(h).getText().equalsIgnoreCase(verify_accountName)){
+		
+		
+	}
+}

@@ -15,19 +15,21 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('Atlas Platform/OnBoard/Login/LoginWithRootAdmin'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl('http://dqfn4clx0bazt.cloudfront.net/')
+String initiallyselectedtext = WebUI.getText(findTestObject('Swicther/swicthermenutext'))
 
-'Verifing AMP Image SRC Attribute'
-WebUI.verifyElementPresent(findTestObject('HeaderMenus/ampimage'), 0)
+WebUI.click(findTestObject('Swicther/swicthermenutext'))
 
-WebUI.navigateToUrl(svgURL)
+WebUI.click(findTestObject('Swicther/accounts_tab_swicther'))
 
-'Verifing the AMP Images D attributes values'
-WebUI.verifyEqual(WebUI.getCSSValue(findTestObject('LoginPage/ampimagesvg'), 'd'), path)
+String selectedtext = WebUI.getText(findTestObject('Swicther/account_tab_first_values'))
 
-WebUI.verifyElementInViewport(findTestObject('LoginPage/backgroundImage'), 0)
+WebUI.click(findTestObject('Swicther/account_tab_first_values'))
 
-CustomKeywords.'web.CustomKeyword.CompareBothImages'(findTestObject('LoginPage/backgroundImage'), 'D:\\bck.png')
+WebUI.verifyNotEqual(initiallyselectedtext, (selectedtext.split('Last')[0]).trim())
+
+String currentlySelectedText = WebUI.getText(findTestObject('Swicther/swicthermenutext'))
+
+WebUI.verifyEqual(currentlySelectedText.trim(), (selectedtext.split('Last')[0]).trim())
 
