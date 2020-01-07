@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>accounts_tab_all_icons</name>
+   <name>accounts_tab_all_fav_icons</name>
    <tag></tag>
-   <elementGuidId>759c7787-b9d2-47e4-81a9-1ab000666707</elementGuidId>
+   <elementGuidId>2276a16e-1ea4-4eca-89d0-4af814120847</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='switcherTabs-pane-3']/ul/li/div/div[1]/div[1]/*[name()='svg']/*[name()='path']</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//div[@id='switcherTabs-pane-3']/ul/li/div/div[2]/div/div/*[name()='svg']/*[name()='path']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
