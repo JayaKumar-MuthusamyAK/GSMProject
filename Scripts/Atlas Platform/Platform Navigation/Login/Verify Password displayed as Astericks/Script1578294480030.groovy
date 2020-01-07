@@ -20,11 +20,11 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://dqfn4clx0bazt.cloudfront.net/')
 
-WebUI.setText(findTestObject('Login_Page/Page_/email address placeholder'), Email)
+WebUI.setText(findTestObject('Login_Page/Page_/email address placeholder'), email, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setText(findTestObject('Login_Page/Page_/Password placeholder'), Password)
+WebUI.setText(findTestObject('Login_Page/Page_/Password placeholder'), password, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Login_Page/Page_/Log In button'))
+WebUI.verifyElementAttributeValue(findTestObject('Login_Page/Page_/Password placeholder'), 'type', 'password', 0)
 
-WebUI.verifyElementPresent(findTestObject('Login_Page/Page_/div_Enter Password'), 30)
+WebUI.verifyElementText(findTestObject('Login_Page/Page_/Password placeholder'), '', FailureHandling.CONTINUE_ON_FAILURE)
 

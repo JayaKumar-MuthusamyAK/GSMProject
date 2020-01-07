@@ -41,7 +41,7 @@
       <guid>c5746411-6014-44b4-9cf2-bc55f78f5de9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Atlas Platform/Platform Navigation/Login/Valid_Login</testCaseId>
+      <testCaseId>Test Cases/Atlas Platform/Platform Navigation/Login/Roles_Search_suggestions</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>2bc1f08f-68c5-44a7-8502-215dbb606427</id>
@@ -62,6 +62,18 @@
          <type>DATA_COLUMN</type>
          <value>Password</value>
          <variableId>6a9f6966-21f5-4305-886b-c0ff36fc847c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>1f7ee67c-b117-4b88-aed2-21cf36426532</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>4d8709d4-0ef7-493f-993c-deea160640ba</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>

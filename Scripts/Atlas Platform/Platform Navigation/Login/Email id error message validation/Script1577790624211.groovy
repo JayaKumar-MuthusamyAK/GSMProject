@@ -22,7 +22,7 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://dqfn4clx0bazt.cloudfront.net/')
 
-WebUI.setText(findTestObject('Login_Page/Page_/email address text box'), Email)
+WebUI.setText(findTestObject('Login_Page/Page_/email address placeholder'), Email)
 
 WebUI.setText(findTestObject('Login_Page/Page_/Password placeholder'), Password)
 
