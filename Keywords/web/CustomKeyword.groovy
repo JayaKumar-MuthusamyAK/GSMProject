@@ -1,4 +1,4 @@
-package application
+package web
 
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
@@ -6,6 +6,7 @@ import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
+import java.awt.image.BufferedImage
 import java.text.SimpleDateFormat
 
 import javax.imageio.ImageIO
@@ -13,6 +14,7 @@ import javax.imageio.ImageIO
 import org.apache.commons.lang.RandomStringUtils
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
+import org.testng.Assert
 
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
@@ -34,6 +36,7 @@ import ru.yandex.qatools.ashot.AShot
 import ru.yandex.qatools.ashot.Screenshot
 import ru.yandex.qatools.ashot.comparison.ImageDiff
 import ru.yandex.qatools.ashot.comparison.ImageDiffer
+import ru.yandex.qatools.ashot.coordinates.WebDriverCoordsProvider
 
 public class CustomKeyword {
 
@@ -151,5 +154,52 @@ public class CustomKeyword {
 		}
 
 		bw.close();
+	}
+
+	@Keyword
+	public static void CompareBothImages(TestObject testObjectoftheimage, String pathoftheimage){
+
+
+		try{
+
+			BufferedImage actualImag = ImageIO.read(new File(pathoftheimage))
+			Screenshot screen = new AShot().coordsProvider(new WebDriverCoordsProvider()).takeScreenshot(driver, WebUiCommonHelper.findWebElement(testObjectoftheimage, 0));
+			BufferedImage bfrimage = screen.getImage();
+			ImageDiffer imgdiffer = new ImageDiffer();
+			ImageDiff imgdiff = imgdiffer.makeDiff(bfrimage, actualImag);
+			Assert.assertTrue(imgdiff.hasDiff(), "Both Images are matched");
+		}
+		catch(Exception e){
+
+			println "Exception : "+e.getMessage()
+		}
+	}
+
+	@Keyword
+	public boolean checkListAscendingOrder(List<String> listOfString){
+
+		List<String> tempString = new ArrayList<String>(listOfString);
+
+		Collections.sort(tempString);
+
+		return tempString.equals(listOfString);
+	}
+
+	@Keyword
+	public boolean checkListDescendingOrder(List<String> listOfString, List<String> listOfStringWithDesc){
+
+		List<String> tempString = new ArrayList<String>(listOfStringWithDesc);
+
+		Collections.sort(listOfString, Collections.reverseOrder());
+
+		return tempString.equals(listOfString);
+	}
+
+	@Keyword
+	public static String getrandomStingValue(List<String> listOfString){
+
+		Random random = new Random();
+
+		return listOfString.get(random.nextInt(listOfString.size()))
 	}
 }
