@@ -43,11 +43,6 @@ String email_err_font_size = WebUI.getCSSValue(findTestObject('Login_Page/Page_/
 
 WebUI.verifyEqual(email_err_font_size, findTestData('Login page CSS').getValue(4, 2), FailureHandling.CONTINUE_ON_FAILURE)
 
-String email_err_font_fmly = WebUI.getCSSValue(findTestObject('Login_Page/Page_/div_Invalid Email Format'), findTestData(
-        'Login page CSS').getValue(5, 1))
-
-WebUI.verifyEqual(email_err_font_fmly, findTestData('Login page CSS').getValue(5, 2), FailureHandling.CONTINUE_ON_FAILURE)
-
 println(email_clr_act)
 
 println(email_err_font_size)
