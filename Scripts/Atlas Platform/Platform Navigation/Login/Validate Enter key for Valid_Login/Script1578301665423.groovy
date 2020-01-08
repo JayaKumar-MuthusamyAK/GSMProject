@@ -13,14 +13,18 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-
-import groovy.json.internal.Exceptions as Exceptions
 import internal.GlobalVariable as GlobalVariable
-import org.junit.After as After
-
 import org.openqa.selenium.Keys as Keys
 
+import org.openqa.selenium.WebDriver
+//import org.openqa.selenium.interactions.Actions
+//import com.kms.katalon.core.webui.driver.DriverFactory
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+
 WebUI.openBrowser('')
+
+//WebDriver driver = DriverFactory.getWebDriver()
 
 WebUI.navigateToUrl('http://dqfn4clx0bazt.cloudfront.net/')
 
@@ -28,7 +32,27 @@ WebUI.setText(findTestObject('Login_Page/Page_/email address placeholder'), Emai
 
 WebUI.setText(findTestObject('Login_Page/Page_/Password placeholder'), Password)
 
-WebUI.click(findTestObject('Login_Page/Page_/Log In button'))
+Robot r=new Robot()
 
-WebUI.verifyElementPresent(findTestObject('Login_Page/Page_/div_Invalid Email Format'), 30)
+r.keyPress(KeyEvent.VK_ENTER)
+r.keyRelease(KeyEvent.VK_ENTER)
+
+
+dashboard_act_title = WebUI.getWindowTitle()
+
+WebUI.verifyEqual(dashboard_act_title, dashboard_exp_title)
+
+WebUI.verifyElementPresent(findTestObject('Login_Page/Dashboard/a_AUDIENCE'), 0)
+
+WebUI.verifyElementPresent(findTestObject('Login_Page/Dashboard/a_CONTENT'), 0)
+
+WebUI.verifyElementPresent(findTestObject('Login_Page/Dashboard/a_MESSAGING'), 0)
+
+WebUI.verifyElementPresent(findTestObject('Login_Page/Dashboard/a_REPORTING'), 0)
+
+WebUI.verifyElementPresent(findTestObject('Login_Page/Dashboard/a_ADMIN'), 0)
+
+WebUI.verifyElementPresent(findTestObject('Login_Page/Dashboard/div_Toyota'), 0)
+
+WebUI.verifyElementPresent(findTestObject('Login_Page/Dashboard/img'), 0)
 

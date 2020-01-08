@@ -20,23 +20,27 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://dqfn4clx0bazt.cloudfront.net/')
 
-WebUI.setText(findTestObject('Login_Page/Page_/input_Email Address_form-control'), Email)
+WebUI.setText(findTestObject('Login_Page/Page_/email address placeholder'), Email)
 
-WebUI.setText(findTestObject('Login_Page/Page_/input_Password_form-control'), Password)
+WebUI.setText(findTestObject('Login_Page/Page_/Password placeholder'), Password)
 
-WebUI.click(findTestObject('Login_Page/Page_/button_Log In'))
+WebUI.click(findTestObject('Login_Page/Page_/Log In button'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Dashboard/Page_/a_AUDIENCE'), 0)
+dashboard_act_title = WebUI.getWindowTitle()
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Dashboard/Page_/a_CONTENT'), 0)
+WebUI.verifyEqual(dashboard_act_title, dashboard_exp_title)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Dashboard/Page_/a_MESSAGING'), 0)
+WebUI.verifyElementPresent(findTestObject('Login_Page/Dashboard/a_AUDIENCE'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Dashboard/Page_/a_REPORTING'), 0)
+WebUI.verifyElementPresent(findTestObject('Login_Page/Dashboard/a_CONTENT'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Dashboard/Page_/a_ADMIN'), 0)
+WebUI.verifyElementPresent(findTestObject('Login_Page/Dashboard/a_MESSAGING'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Dashboard/Page_/div_Toyota'), 0)
+WebUI.verifyElementPresent(findTestObject('Login_Page/Dashboard/a_REPORTING'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Dashboard/Page_/img'), 0)
+WebUI.verifyElementPresent(findTestObject('Login_Page/Dashboard/a_ADMIN'), 0)
+
+WebUI.verifyElementPresent(findTestObject('Login_Page/Dashboard/div_Toyota'), 0)
+
+WebUI.verifyElementPresent(findTestObject('Login_Page/Dashboard/img'), 0)
 

@@ -21,30 +21,30 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/LoginPage/adminmenu
 
 String str1 = WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/adminmenu'), 'color')
 
-WebUI.verifyMatch(str1, str1, true)
+WebUI.verifyEqual(str1, str1, FailureHandling.STOP_ON_FAILURE)
 
 String str2 = WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/adminmenu'), 'font-size')
 
-WebUI.verifyMatch(str2, str2, true)
+WebUI.verifyEqual(str2, str2, FailureHandling.STOP_ON_FAILURE)
 
 String str3 = WebUI.getText(findTestObject('Object Repository/LoginPage/adminmenu'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyMatch(str3, str3, true)
+WebUI.verifyEqual(str3, str3, FailureHandling.STOP_ON_FAILURE)
 
 //WebUI.verifyElementAttributeValue(findTestObject('Object Repository/LoginPage/adminmenu'), "class", "active", 10, FailureHandling.STOP_ON_FAILURE)
 WebUI.click(findTestObject('Object Repository/LoginPage/audiencemenu'))
 
 String str4 = WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/audiencemenu'), 'color')
 
-WebUI.verifyMatch(str4, str4, true)
+WebUI.verifyEqual(str4, str4, FailureHandling.STOP_ON_FAILURE)
 
 String str5 = WebUI.getCSSValue(findTestObject('Object Repository/LoginPage/audiencemenu'), 'font-size')
 
-WebUI.verifyMatch(str5, str5, true)
+WebUI.verifyEqual(str5, str5, FailureHandling.STOP_ON_FAILURE)
 
 String str6 = WebUI.getText(findTestObject('Object Repository/LoginPage/audiencemenu'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyMatch(str6, str6, true)
+WebUI.verifyEqual(str6, str6, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/LoginPage/contentmeu'))
 
