@@ -18,7 +18,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Atlas Platform/OnBoard/Login/LoginWithRootAdmin'), [:], FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.callTestCase(findTestCase('Atlas Platform/OnBoard/Swicther/TC_100_RemoveAllFavorites'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Swicther/swicthermenutext'))
 
@@ -26,8 +26,7 @@ WebUI.click(findTestObject('Swicther/accounts_tab_swicther'))
 
 List<WebElement> listofoptions = WebUiCommonHelper.findWebElements(findTestObject('Swicther/accounts_tab_all_values'), 5)
 
-List<WebElement> listoffavicons = WebUiCommonHelper.findWebElements(findTestObject('Swicther/accounts_tab_fav_icon'), 
-    5)
+List<WebElement> listoffavicons = WebUiCommonHelper.findWebElements(findTestObject('Swicther/accounts_tab_fav_icon'), 5)
 
 List<WebElement> listofoptioninstring = new ArrayList<String>()
 
@@ -39,9 +38,9 @@ String verify_accountName = CustomKeywords.'web.CustomKeyword.getrandomStingValu
 
 for (int h = 0; h < listofoptions.size(); h++) {
     if (listofoptions.get(h).getText().equalsIgnoreCase(verify_accountName)) {
-        
-		listoffavicons.get(h).click()
-		break
+        listoffavicons.get(h).click()
+
+        break
     }
 }
 
@@ -50,11 +49,18 @@ WebUI.click(findTestObject('Swicther/favorites_tabs_swicther'))
 List<WebElement> listoffavvalues = WebUiCommonHelper.findWebElements(findTestObject('Swicther/favorites_tab_all_values'), 
     5)
 
+boolean isPresent = false
+
 for (int j = 0; j < listoffavvalues.size(); j++) {
     if (listoffavvalues.get(j).getText().equalsIgnoreCase(verify_accountName)) {
-        Assert.assertEquals(listoffavvalues.get(j).getText(), verify_accountName)
+        isPresent = true
     }
 }
 
 not_run: WebUI.click(findTestObject('Swicther/favorite_icon'))
+
+//Assert.assertTrue(isPresent, "FAVORITES TAB ADDED SELECTED ACCOUNT ")
+WebUI.verifyEqual(isPresent, true)
+
+WebUI.click(findTestObject('Swicther/closeIcon'))
 

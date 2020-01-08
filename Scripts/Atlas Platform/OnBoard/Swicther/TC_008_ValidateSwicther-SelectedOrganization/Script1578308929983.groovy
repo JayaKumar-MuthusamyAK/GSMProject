@@ -15,19 +15,21 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Atlas Platform/OnBoard/Login/LoginWithRootAdmin'), [:], FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.callTestCase(findTestCase('Atlas Platform/OnBoard/Login/LoginWithRootAdmin'), [:], FailureHandling.STOP_ON_FAILURE)
 
 String initiallyselectedtext = WebUI.getText(findTestObject('Swicther/swicthermenutext'))
 
 WebUI.click(findTestObject('Swicther/swicthermenutext'))
 
+WebUI.click(findTestObject('Swicther/organization_tab_swicther'))
+
 String selectedtext = WebUI.getText(findTestObject('Swicther/fordtext_value'))
 
 WebUI.click(findTestObject('Swicther/fordtext_value'))
 
-WebUI.verifyNotEqual(initiallyselectedtext, selectedtext.split("Last")[0].trim())
+WebUI.verifyNotEqual(initiallyselectedtext, (selectedtext.split('Last')[0]).trim())
 
 String currentlySelectedText = WebUI.getText(findTestObject('Swicther/swicthermenutext'))
 
-WebUI.verifyEqual(currentlySelectedText.trim(), selectedtext.split("Last")[0].trim())
+WebUI.verifyEqual(currentlySelectedText.trim(), (selectedtext.split('Last')[0]).trim())
 

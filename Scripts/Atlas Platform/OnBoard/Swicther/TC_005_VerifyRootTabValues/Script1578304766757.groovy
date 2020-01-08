@@ -18,7 +18,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Atlas Platform/OnBoard/Login/LoginWithRootAdmin'), [:], FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.callTestCase(findTestCase('Atlas Platform/OnBoard/Login/LoginWithRootAdmin'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Swicther/swicthermenutext'))
 
@@ -47,5 +47,8 @@ List<WebElement> listofAccNames = WebUiCommonHelper.findWebElements(findTestObje
     10)
 
 for (int hjk = 0; hjk < listofAccNames.size(); hjk++) {
-	Assert.assertTrue(!(rootNames.contains((listofAccNames.get(hjk).getText().split('Last')[0]).trim())), 'Root Account is not present in Acc Tab')
+    Assert.assertTrue(!(rootNames.contains((listofAccNames.get(hjk).getText().split('Last')[0]).trim())), 'Root Account is not present in Acc Tab')
 }
+
+WebUI.click(findTestObject('Swicther/closeIcon'))
+

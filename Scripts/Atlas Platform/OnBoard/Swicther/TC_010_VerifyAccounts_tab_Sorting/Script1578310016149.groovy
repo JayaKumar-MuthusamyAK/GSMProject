@@ -17,7 +17,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Atlas Platform/OnBoard/Login/LoginWithRootAdmin'), [:], FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.callTestCase(findTestCase('Atlas Platform/OnBoard/Login/LoginWithRootAdmin'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Swicther/swicthermenutext'))
 
@@ -28,11 +28,13 @@ List<WebElement> listofoptions = WebUiCommonHelper.findWebElements(findTestObjec
 List<WebElement> listofoptioninstring = new ArrayList<String>()
 
 for (WebElement ele : listofoptions) {
-    listofoptioninstring.addAll(ele.getText())
+    listofoptioninstring.addAll(ele.getText().split('Last')[0])
 }
 
 boolean isSorted = CustomKeywords.'web.CustomKeyword.checkListAscendingOrder'(listofoptioninstring)
 
 'If custom keyword is written true test case pass.Otherwise fail.'
 WebUI.verifyEqual(isSorted, true)
+
+WebUI.click(findTestObject('Swicther/closeIcon'))
 

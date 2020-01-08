@@ -43,7 +43,7 @@ public class CustomKeyword {
 
 	public static WebDriver driver = DriverFactory.getWebDriver();
 
-	static FileWriter filewriter = new FileWriter("C:\\Users\\Dell\\Katalon Studio\\SampleTestProject\\TestData\\BrokenlinksWithStatus.txt");
+	static FileWriter filewriter = new FileWriter(System.getProperty("user.dir")+"\\Test Output\\BrokenlinksWithStatus.txt");
 
 	static BufferedWriter bw = new BufferedWriter(filewriter);
 
@@ -56,7 +56,7 @@ public class CustomKeyword {
 
 		String phoneNo = null;
 
-		String temp = RandomStringUtils.random(0, "12345678901234567890");
+		String temp = RandomStringUtils.random(11, "12345678901234567890");
 
 		String numbers = temp.substring(9, temp.length());
 
@@ -73,9 +73,9 @@ public class CustomKeyword {
 
 		String emailID = null;
 
-		String tempemail =  RandomStringUtils.random(0,"abcdefghijklmnopqrstuvwxyz")
-
-		String email = tempemail.substring(12, tempemail.length());
+		String tempemail =  RandomStringUtils.random(15,"abcdefghijklmnopqrstuvwxyz")
+		
+		String email = tempemail.substring(10, tempemail.length());
 
 		return email+"@yopmail.com"
 	}
@@ -106,7 +106,7 @@ public class CustomKeyword {
 		Calendar calendar = Calendar.getInstance();
 		SimpleDateFormat simpleformat = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
 		Screenshot screen =new AShot().takeScreenshot(driver);
-		ImageIO.write(screen.getImage(), "PNG", new File("C:\\Users\\Dell\\Katalon Studio\\SampleTestProject\\ScreenShots\\"+simpleformat.format(calendar.getTime())));
+		ImageIO.write(screen.getImage(), "PNG", new File(System.getProperty("user.dir")+"\\Test Output\\"+simpleformat.format(calendar.getTime())));
 
 		/*ImageDiffer imagediffer = new ImageDiffer();
 		 ImageDiff imagediff = imagediffer.makeDiff(screen, screen)*/
@@ -200,6 +200,7 @@ public class CustomKeyword {
 
 		Random random = new Random();
 
-		return listOfString.get(random.nextInt(listOfString.size()))
+		//return listOfString.get(random.nextInt(listOfString.size()))
+		return listOfString.get(random.nextInt(3))
 	}
 }
