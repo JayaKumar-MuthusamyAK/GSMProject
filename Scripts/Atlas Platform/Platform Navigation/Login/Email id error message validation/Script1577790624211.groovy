@@ -30,15 +30,6 @@ WebUI.click(findTestObject('Login_Page/Page_/Log In button'))
 
 WebUI.verifyElementPresent(findTestObject('Login_Page/Page_/div_Invalid Email Format'), 30)
 
-<<<<<<< HEAD
-WebUI.verifyElementText(findTestObject('Login_Page/Page_/div_Invalid Email Format'), findTestData('Login page CSS').getValue(
-        2, 2), FailureHandling.CONTINUE_ON_FAILURE)
-
-String email_clr_act = WebUI.getCSSValue(findTestObject('Login_Page/Page_/div_Invalid Email Format'), findTestData('Login page CSS').getValue(
-        3, 1))
-
-WebUI.verifyEqual(email_clr_act, findTestData('Login page CSS').getValue(3, 2), FailureHandling.CONTINUE_ON_FAILURE)
-=======
 WebUI.verifyElementText(findTestObject('Login_Page/Page_/div_Invalid Email Format'), findTestData('AMP').getValue(6, 1), 
     FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -46,22 +37,14 @@ String email_clr_act = WebUI.getCSSValue(findTestObject('Login_Page/Page_/div_In
         5, 2))
 
 WebUI.verifyEqual(email_clr_act, findTestData('AMP').getValue(6, 2), FailureHandling.CONTINUE_ON_FAILURE)
->>>>>>> 04a6398fb4e214a4c7cb9fceb064be1469783ad6
 
+//>>>>>>> 04a6398fb4e214a4c7cb9fceb064be1469783ad6
 String email_err_font_size = WebUI.getCSSValue(findTestObject('Login_Page/Page_/div_Invalid Email Format'), findTestData(
         'Login page CSS').getValue(4, 1))
 
-<<<<<<< HEAD
-WebUI.verifyEqual(email_err_font_size, findTestData('Login page CSS').getValue(4, 2), FailureHandling.CONTINUE_ON_FAILURE)
-=======
 WebUI.verifyEqual(email_err_font_size, findTestData('AMP').getValue(6, 3), FailureHandling.CONTINUE_ON_FAILURE)
 
-String email_err_font_fmly = WebUI.getCSSValue(findTestObject('Login_Page/Page_/div_Invalid Email Format'), findTestData(
-        'AMP').getValue(5, 4))
-
-WebUI.verifyEqual(email_err_font_fmly, findTestData('AMP').getValue(6, 4), FailureHandling.CONTINUE_ON_FAILURE)
->>>>>>> 04a6398fb4e214a4c7cb9fceb064be1469783ad6
-
+//>>>>>>> 04a6398fb4e214a4c7cb9fceb064be1469783ad6
 println(email_clr_act)
 
 println(email_err_font_size)
