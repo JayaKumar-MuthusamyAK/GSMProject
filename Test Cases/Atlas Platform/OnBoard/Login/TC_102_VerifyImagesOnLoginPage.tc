@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>VerifyImagesOnLoginPage</name>
+   <name>TC_102_VerifyImagesOnLoginPage</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>1b725234-228e-4439-af6f-66d7734df701</testCaseGuid>
