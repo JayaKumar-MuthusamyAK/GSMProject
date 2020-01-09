@@ -12,6 +12,7 @@ import java.text.SimpleDateFormat
 import javax.imageio.ImageIO
 
 import org.apache.commons.lang.RandomStringUtils
+import org.openqa.selenium.Cookie
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
 import org.testng.Assert
@@ -74,7 +75,7 @@ public class CustomKeyword {
 		String emailID = null;
 
 		String tempemail =  RandomStringUtils.random(15,"abcdefghijklmnopqrstuvwxyz")
-		
+
 		String email = tempemail.substring(10, tempemail.length());
 
 		return email+"@yopmail.com"
@@ -202,5 +203,24 @@ public class CustomKeyword {
 
 		//return listOfString.get(random.nextInt(listOfString.size()))
 		return listOfString.get(random.nextInt(3))
+	}
+
+	// Used to get cookies domain.
+	@Keyword
+	public static String getCookiesValue(){
+
+
+		Set<Cookie> cookies = driver.manage().getCookies();
+
+		String domainname;
+
+		for(Cookie cookie : cookies){
+
+			println cookie.getName()+"--"+cookie.getValue()+"--"+cookie.getDomain();
+
+			domainname = cookie.getDomain();
+		}
+
+		return domainname;
 	}
 }
