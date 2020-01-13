@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='style__closeicon___2sHT_']</value>
+         <value>//div[@class='style__closeicon___1Hyqy']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

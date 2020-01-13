@@ -7,7 +7,8 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='style__closeIcon___PIFd- col-lg-2 col-md-2 col-sm-2 col-xs-2']/*[name()='svg']/*[name()='path']</value>
+         <value>//div[@class='style__closeIcon___3lhQH col-lg-2 col-md-2 col-sm-2 col-xs-2']/*[name()='svg']/*[name()='path']
+</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

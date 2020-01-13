@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[@class='style__cancelSearch___1Frji btn btn-link']</value>
+         <value>//button[@class='style__cancelSearch___34n4L btn btn-link']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

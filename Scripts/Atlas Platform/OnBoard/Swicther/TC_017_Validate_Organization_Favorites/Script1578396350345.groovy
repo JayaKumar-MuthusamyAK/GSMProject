@@ -45,6 +45,8 @@ for (int h = 0; h < listofoptions.size(); h++) {
     }
 }
 
+WebUI.delay(3)
+
 WebUI.click(findTestObject('Swicther/favorites_tabs_swicther'))
 
 List<WebElement> listoffavvalues = WebUiCommonHelper.findWebElements(findTestObject('Swicther/favorites_tab_all_values'), 
