@@ -6,12 +6,11 @@
    <elementGuidId>e917d6ee-0780-4d8f-b490-f43d88ffb72b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//ul[@class='nav']/li/a/*[name()='svg']/*[name()='path'])[2]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(//ul[@class='nav']/li/a/div/*[name()='svg']/*[name()='path'])[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
