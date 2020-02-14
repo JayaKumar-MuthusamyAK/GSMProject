@@ -11,6 +11,12 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <testSuiteGuid>799a4984-160f-4f97-8513-c973e8d5b44e</testSuiteGuid>
    <testCaseLink>
+      <guid>a301abda-0e93-43d3-94de-ea34100dae7c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Atlas Platform/OnBoard/SwictherDBValidation/TC_100_ForSecurityURLSAcceptance</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
       <guid>eca70552-e8dc-46af-9fa9-7550c8d36f2e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -44,33 +50,6 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>04ee0d63-a2ea-45af-971b-bddf7846664c</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Atlas Platform/Platform Navigation/Login/InValid Email ID_Login</testCaseId>
-      <testDataLink>
-         <combinationType>MANY</combinationType>
-         <id>bf8bdddd-7cab-4c1e-bd4b-53e566a935e4</id>
-         <iterationEntity>
-            <iterationType>RANGE</iterationType>
-            <value>19-38</value>
-         </iterationEntity>
-         <testDataId>Data Files/AMP_Y</testDataId>
-      </testDataLink>
-      <variableLink>
-         <testDataLinkId>bf8bdddd-7cab-4c1e-bd4b-53e566a935e4</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>Email</value>
-         <variableId>0e64ab1a-2e7e-4fb8-a0c1-445e91930d90</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>bf8bdddd-7cab-4c1e-bd4b-53e566a935e4</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>Password</value>
-         <variableId>da2d6be7-b1e3-480a-b78b-ff4ddf997f96</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
       <guid>8aa90486-5253-4057-ac00-47994c5742fa</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -95,6 +74,33 @@
          <type>DATA_COLUMN</type>
          <value>Password</value>
          <variableId>6f7b3bb8-9f36-49d3-b444-29f2b74f9fcd</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>04ee0d63-a2ea-45af-971b-bddf7846664c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Atlas Platform/Platform Navigation/Login/InValid Email ID_Login</testCaseId>
+      <testDataLink>
+         <combinationType>MANY</combinationType>
+         <id>bf8bdddd-7cab-4c1e-bd4b-53e566a935e4</id>
+         <iterationEntity>
+            <iterationType>RANGE</iterationType>
+            <value>19-38</value>
+         </iterationEntity>
+         <testDataId>Data Files/AMP_Y</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>bf8bdddd-7cab-4c1e-bd4b-53e566a935e4</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Email</value>
+         <variableId>0e64ab1a-2e7e-4fb8-a0c1-445e91930d90</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>bf8bdddd-7cab-4c1e-bd4b-53e566a935e4</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Password</value>
+         <variableId>da2d6be7-b1e3-480a-b78b-ff4ddf997f96</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_Images</name>
+   <name>span_CONTENT</name>
    <tag></tag>
-   <elementGuidId>03ed5e21-7957-4c07-9e85-4972387ab6fe</elementGuidId>
+   <elementGuidId>2bcdcd5b-c38f-4565-b97f-403bb1d50ab4</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//a/*[contains(text(),'Images')])[1]</value>
+         <value>//div[@id='init']/div/div/div[2]/div/nav/div/ul/li[2]/a/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -17,69 +17,69 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>div</value>
+      <value>span</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>src-sub-nav-style__subnavItems</value>
+      <value>style__linkName___3_8Mi</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Images</value>
+      <value>CONTENT</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;content&quot;)/div[1]/div[1]/div[1]/div[1]/div[@class=&quot;container-fluid src-sub-nav-style__subNavShadow&quot;]/div[@class=&quot;src-sub-nav-style__subNavContainer row&quot;]/div[@class=&quot;src-sub-nav-style__subNavPanelShape col-lg-11 col-md-12&quot;]/nav[@class=&quot;src-sub-nav-style__subNavBar navbar navbar-default&quot;]/div[@class=&quot;container&quot;]/ul[@class=&quot;src-sub-nav-style__navBarActive nav navbar-nav&quot;]/li[2]/a[@class=&quot;active&quot;]/div[@class=&quot;src-sub-nav-style__subnavItems&quot;]</value>
+      <value>id(&quot;init&quot;)/div[1]/div[@class=&quot;style__appPanelContainer___O-qIV&quot;]/div[@class=&quot;style__navbarContent___1eDHP col-lg-6 col-md-7 col-sm-5 col-xs-4&quot;]/div[@class=&quot;style__navContainer___Dku29&quot;]/nav[@class=&quot;style__navBarContainer___UGcw- navbar navbar-default&quot;]/div[@class=&quot;container&quot;]/ul[@class=&quot;style__activeTabStyle___13b3L nav navbar-nav&quot;]/li[2]/a[@class=&quot;active&quot;]/span[@class=&quot;style__linkName___3_8Mi&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='content']/div/div/div/div/div/div/div[2]/nav/div/ul/li[2]/a/div</value>
+      <value>//div[@id='init']/div/div/div[2]/div/nav/div/ul/li[2]/a/span</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Templates'])[1]/following::div[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='AUDIENCE'])[1]/following::span[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Toyota'])[1]/following::div[13]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='MESSAGING'])[1]/preceding::span[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Offers'])[1]/preceding::div[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='REPORTING'])[1]/preceding::span[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hello Content'])[1]/preceding::div[3]</value>
+      <value>//*/text()[normalize-space(.)='CONTENT']/parent::*</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/nav/div/ul/li[2]/a/div</value>
+      <value>//li[2]/a/span</value>
    </webElementXpaths>
 </WebElementEntity>

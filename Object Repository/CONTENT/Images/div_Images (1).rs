@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_Images</name>
+   <name>div_Images (1)</name>
    <tag></tag>
-   <elementGuidId>03ed5e21-7957-4c07-9e85-4972387ab6fe</elementGuidId>
+   <elementGuidId>11fce1d0-3be7-40d0-a720-e7d746935c06</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//a/*[contains(text(),'Images')])[1]</value>
+         <value>//div[@id='content']/div/div/div/div/div[2]/div/div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -24,7 +24,7 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>src-sub-nav-style__subnavItems</value>
+      <value>style__toggleHeader___1fIIO</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,48 +38,48 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;content&quot;)/div[1]/div[1]/div[1]/div[1]/div[@class=&quot;container-fluid src-sub-nav-style__subNavShadow&quot;]/div[@class=&quot;src-sub-nav-style__subNavContainer row&quot;]/div[@class=&quot;src-sub-nav-style__subNavPanelShape col-lg-11 col-md-12&quot;]/nav[@class=&quot;src-sub-nav-style__subNavBar navbar navbar-default&quot;]/div[@class=&quot;container&quot;]/ul[@class=&quot;src-sub-nav-style__navBarActive nav navbar-nav&quot;]/li[2]/a[@class=&quot;active&quot;]/div[@class=&quot;src-sub-nav-style__subnavItems&quot;]</value>
+      <value>id(&quot;content&quot;)/div[1]/div[1]/div[1]/div[1]/div[@class=&quot;bg-default&quot;]/div[@class=&quot;page-container&quot;]/div[@class=&quot;style__toggleHeader___1fIIO&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='content']/div/div/div/div/div/div/div[2]/nav/div/ul/li[2]/a/div</value>
+      <value>//div[@id='content']/div/div/div/div/div[2]/div/div</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Templates'])[1]/following::div[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Assets'])[1]/following::div[4]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Toyota'])[1]/following::div[13]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Images'])[1]/following::div[5]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Offers'])[1]/preceding::div[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Recently Edited'])[1]/preceding::div[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hello Content'])[1]/preceding::div[3]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Recently Uploaded'])[1]/preceding::div[3]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/nav/div/ul/li[2]/a/div</value>
+      <value>//div/div[2]/div/div</value>
    </webElementXpaths>
 </WebElementEntity>

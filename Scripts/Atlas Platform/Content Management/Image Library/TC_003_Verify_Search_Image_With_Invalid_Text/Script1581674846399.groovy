@@ -3,6 +3,8 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.WebElement as WebElement
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -11,22 +13,27 @@ import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import groovy.json.internal.Exceptions as Exceptions
 import internal.GlobalVariable as GlobalVariable
-import org.junit.After as After
-import org.openqa.selenium.Keys as Keys
 
-not_run: WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('Atlas Platform/OnBoard/Login/LoginWithRootAdmin'), [('user_Email') : 'navaraj@totient.co.in'
+        , ('user_Password') : 'Totient@123'], FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.navigateToUrl('http://dqfn4clx0bazt.cloudfront.net/')
+WebUI.click(findTestObject('HeaderMenus/contentmeu'))
 
-WebUI.setText(findTestObject('Login_Page/Page_/email address placeholder'), Email)
+WebUI.click(findTestObject('Login_Page/Dashboard/Content Sub-Navigation/div_Images'))
 
-WebUI.setText(findTestObject('Login_Page/Page_/Password placeholder'), Password)
+WebUI.click(findTestObject('Object Repository/CONTENT/Images/all_Image_textwithcount'))
 
-WebUI.click(findTestObject('Login_Page/Page_/Log In button'))
+WebUI.setText(findTestObject('CONTENT/Images/image_search_box'), 'aaaaa' + Keys.ENTER)
 
-WebUI.verifyElementPresent(findTestObject('Login_Page/Page_/div_Invalid Email Format'), 30)
+WebUI.delay(5)
+
+String text = WebUI.getText(findTestObject('CONTENT/Images/showingtextforpagination'))
+
+int resultfound_count = Integer.parseInt(text.split('of')[1].split(' ')[1].trim())
+
+WebUI.verifyEqual(resultfound_count, 0)
 
