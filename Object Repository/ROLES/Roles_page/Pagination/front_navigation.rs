@@ -3,7 +3,7 @@
    <description></description>
    <name>front_navigation</name>
    <tag></tag>
-   <elementGuidId>10ca6f02-b877-4cbf-b943-6d6cf6a5ee6d</elementGuidId>
+   <elementGuidId>47f44ef6-10ed-410b-acfc-297d32a64a0c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

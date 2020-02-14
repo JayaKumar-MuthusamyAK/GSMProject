@@ -13,14 +13,12 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-
 import groovy.json.internal.Exceptions as Exceptions
 import internal.GlobalVariable as GlobalVariable
 import org.junit.After as After
-
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+not_run: WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://dqfn4clx0bazt.cloudfront.net/')
 

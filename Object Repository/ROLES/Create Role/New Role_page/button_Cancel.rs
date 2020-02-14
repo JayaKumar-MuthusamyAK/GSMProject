@@ -3,7 +3,7 @@
    <description></description>
    <name>button_Cancel</name>
    <tag></tag>
-   <elementGuidId>7a81d78b-41a4-4c18-baf3-e1eae7903ef5</elementGuidId>
+   <elementGuidId>179cc20e-0e42-4b02-8fff-2061757bed25</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

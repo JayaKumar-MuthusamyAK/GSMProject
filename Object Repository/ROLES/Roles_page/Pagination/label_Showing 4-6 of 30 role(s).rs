@@ -3,11 +3,11 @@
    <description></description>
    <name>label_Showing 4-6 of 30 role(s)</name>
    <tag></tag>
-   <elementGuidId>97c28b8d-4f46-4b93-ace4-2e237c80bd01</elementGuidId>
+   <elementGuidId>34b9dd66-e7a4-4502-b80c-fd5ba43bf6e9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='configure']/div/div/div/div/div[2]/div/div/div[2]/div[4]/div/label</value>
+         <value>//label[@class='src-components-data-table-pager-text-style__pagerText']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

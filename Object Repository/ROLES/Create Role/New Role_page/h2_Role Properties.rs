@@ -3,7 +3,7 @@
    <description></description>
    <name>h2_Role Properties</name>
    <tag></tag>
-   <elementGuidId>3224661b-f505-4308-8ea3-7f30c97fb78b</elementGuidId>
+   <elementGuidId>e1e9ce4a-bbf9-4974-a321-135a3de50a0c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

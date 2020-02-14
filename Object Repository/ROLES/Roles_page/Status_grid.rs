@@ -3,7 +3,7 @@
    <description></description>
    <name>Status_grid</name>
    <tag></tag>
-   <elementGuidId>b484f1d2-8d74-450a-b8ef-89eca81576c9</elementGuidId>
+   <elementGuidId>ac528bad-01a6-4a14-a49f-7ed42d851d9f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

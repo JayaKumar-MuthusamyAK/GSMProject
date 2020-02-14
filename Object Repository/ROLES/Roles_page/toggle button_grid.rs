@@ -3,7 +3,7 @@
    <description></description>
    <name>toggle button_grid</name>
    <tag></tag>
-   <elementGuidId>f4adb79c-1631-44b9-bfb9-3f5312296bfd</elementGuidId>
+   <elementGuidId>3afc1802-ad2d-49e7-bf58-d4dc33c79aed</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

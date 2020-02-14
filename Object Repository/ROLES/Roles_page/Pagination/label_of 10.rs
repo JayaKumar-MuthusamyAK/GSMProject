@@ -3,11 +3,11 @@
    <description></description>
    <name>label_of 10</name>
    <tag></tag>
-   <elementGuidId>8b394079-8288-4259-b62b-75b61afff619</elementGuidId>
+   <elementGuidId>1b39cfb6-3f98-4224-817b-153d7a09c4e4</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='configure']/div/div/div/div/div[2]/div/div/div[2]/div[4]/div[2]/ul/li[2]/div/label[2]</value>
+         <value>(//label[@class='control-label'])[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

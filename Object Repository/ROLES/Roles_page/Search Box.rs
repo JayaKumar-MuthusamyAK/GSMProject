@@ -3,7 +3,7 @@
    <description></description>
    <name>Search Box</name>
    <tag></tag>
-   <elementGuidId>abec239f-54be-49f9-bfee-ab81eafb2d03</elementGuidId>
+   <elementGuidId>ce5da189-6b70-48ba-95d2-5fb60200075d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

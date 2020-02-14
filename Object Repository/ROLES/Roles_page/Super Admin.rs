@@ -3,11 +3,11 @@
    <description></description>
    <name>Super Admin</name>
    <tag></tag>
-   <elementGuidId>84c2185e-d92f-46fb-a3e3-5bfa5b9ead32</elementGuidId>
+   <elementGuidId>c1691bf6-6312-47f9-bc42-099dd126ad5e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[text()='Super Admin']</value>
+         <value>//span[text()='Super Admin']</value>
       </entry>
       <entry>
          <key>BASIC</key>

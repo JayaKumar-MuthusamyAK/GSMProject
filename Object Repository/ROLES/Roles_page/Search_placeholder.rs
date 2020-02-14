@@ -3,7 +3,7 @@
    <description></description>
    <name>Search_placeholder</name>
    <tag></tag>
-   <elementGuidId>ed9554b2-bfb1-42bb-b859-b32c78cfe2c4</elementGuidId>
+   <elementGuidId>0f62ccdd-b7c0-4bbd-9787-77294686afcb</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

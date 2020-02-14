@@ -3,7 +3,7 @@
    <description></description>
    <name>Role Properties_collapse button</name>
    <tag></tag>
-   <elementGuidId>38ad6737-39d9-4a68-99b2-8fd858d256cc</elementGuidId>
+   <elementGuidId>1ccbd381-9fc5-430f-8f48-9c2a4894ea96</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

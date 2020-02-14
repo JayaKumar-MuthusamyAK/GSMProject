@@ -3,7 +3,7 @@
    <description></description>
    <name>a_Platform</name>
    <tag></tag>
-   <elementGuidId>cee29f2d-40b1-4106-8abc-1f9de916bf5d</elementGuidId>
+   <elementGuidId>46f6e834-5b25-4de1-a7e4-8fdc98e001eb</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

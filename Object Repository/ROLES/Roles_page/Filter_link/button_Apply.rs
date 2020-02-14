@@ -3,7 +3,7 @@
    <description></description>
    <name>button_Apply</name>
    <tag></tag>
-   <elementGuidId>16697288-7a96-4253-a628-c07ad7bddb40</elementGuidId>
+   <elementGuidId>6b6f3359-46ce-4209-a480-58493a54d5b7</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
