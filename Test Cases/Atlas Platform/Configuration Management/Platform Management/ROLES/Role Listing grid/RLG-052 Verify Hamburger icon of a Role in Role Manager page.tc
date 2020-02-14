@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RLG-052 Verify Hamburger icon of a Role in Role Manager page</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>dc8e7cd0-3814-4b18-a330-966bfbc95428</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ed06f7bc-0551-486e-b38c-d80893a437e9</id>
+      <masked>false</masked>
+      <name>value0</name>
+   </variable>
+   <variable>
+      <defaultValue>'1'</defaultValue>
+      <description></description>
+      <id>8a41bc69-8b32-490d-953f-a143ea641707</id>
+      <masked>false</masked>
+      <name>value1</name>
+   </variable>
+   <variable>
+      <defaultValue>'2'</defaultValue>
+      <description></description>
+      <id>9d0c7cc8-f446-406e-924c-fe8c75824c1a</id>
+      <masked>false</masked>
+      <name>value2</name>
+   </variable>
+   <variable>
+      <defaultValue>'5'</defaultValue>
+      <description></description>
+      <id>5a3360be-2759-42df-a1e0-ab4e7db48f82</id>
+      <masked>false</masked>
+      <name>value5</name>
+   </variable>
+   <variable>
+      <defaultValue>'6'</defaultValue>
+      <description></description>
+      <id>d051d39f-7d09-467a-b1c3-fb93fcb7aae8</id>
+      <masked>false</masked>
+      <name>value6</name>
+   </variable>
+   <variable>
+      <defaultValue>'500000'</defaultValue>
+      <description></description>
+      <id>869daf0c-0c09-42ab-a0b6-3f117999a24b</id>
+      <masked>false</masked>
+      <name>value500000</name>
+   </variable>
+   <variable>
+      <defaultValue>'Showing 16-18'</defaultValue>
+      <description></description>
+      <id>90bad8d7-e631-4a2c-a7c2-df6ea074c18c</id>
+      <masked>false</masked>
+      <name>page6</name>
+   </variable>
+</TestCaseEntity>
