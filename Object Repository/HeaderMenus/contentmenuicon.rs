@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='init']/div/div[2]/div/nav/div/ul/li[2]/a/div/*[name()='svg']/*[name()='path']</value>
+         <value>(//div[@class='container']/ul/li[2]/a)[1]/div/*[name()='svg']/*[name()='path']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

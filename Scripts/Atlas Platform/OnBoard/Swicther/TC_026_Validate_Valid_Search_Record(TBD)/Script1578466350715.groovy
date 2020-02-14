@@ -14,4 +14,25 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import java.sql.*
+
+CustomKeywords.'web.MySQLDataBase.conncetDBWithOutParams'()
+
+ResultSet rs = CustomKeywords.'web.MySQLDataBase.executeQuery'('select account.name from atlas_config.account INNER join atlas_config.account_access ON account_access.account_id=account.account_id where user_id=2;')
+
+ResultSet rs1 = CustomKeywords.'web.MySQLDataBase.executeQuery'('select count(*) AS total from atlas_config.account INNER join atlas_config.account_access ON account_access.account_id=account.account_id where user_id=2;')
+
+def count
+
+while (rs1.next()) {
+    count = rs1.getInt('total')
+
+    println(count)
+}
+
+/*select account.name, account_access.user_id from atlas_config.account INNER join atlas_config.account_access ON account_access.account_id=account.account_id where user_id='2';
+*/
+while (rs.next()) {
+    println(rs.getString('name'))
+}
 

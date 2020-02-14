@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='configure']/div/div/div/div/div[2]/div/div/div[2]/div[3]/div/table/thead/tr/th[2]/a/span</value>
+         <value>//span[text()='No Users']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

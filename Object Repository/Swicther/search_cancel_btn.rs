@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[@class='style__cancelSearch___34n4L btn btn-link']</value>
+         <value>//a[@class='style__searchCancel___nmTML']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
