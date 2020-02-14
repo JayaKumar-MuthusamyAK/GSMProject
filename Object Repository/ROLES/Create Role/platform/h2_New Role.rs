@@ -7,7 +7,13 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
+<<<<<<< HEAD:Object Repository/ROLES/Create Role/platform/h2_New Role.rs
          <value>//div[@id='configure']/div/div[2]/div/h2</value>
+||||||| f3ce8bc:Object Repository/ROLES/RoleListingPage/allrolestextwithcount.rs
+         <value>//div[@id='configure']/div/div/div/div/div[2]/div/div/div[2]/div</value>
+=======
+         <value>//div[@class='style__headerText___2xIp0']</value>
+>>>>>>> jakay:Object Repository/ROLES/RoleListingPage/allrolestextwithcount.rs
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

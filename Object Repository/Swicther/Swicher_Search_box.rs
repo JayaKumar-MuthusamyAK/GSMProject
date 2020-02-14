@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@name='searchBar']</value>
+         <value>//input[@class='form-control']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

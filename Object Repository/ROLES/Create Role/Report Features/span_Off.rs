@@ -7,7 +7,13 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
+<<<<<<< HEAD:Object Repository/ROLES/Create Role/Report Features/span_Off.rs
          <value>//div[@id='dca264b3-069e-46c9-a206-977a68800d55-pane-reportFeatures']/div/div[2]/div/div/div/div/div/span[3]</value>
+||||||| f3ce8bc:Object Repository/ROLES/RoleListingPage/span_Role.rs
+         <value>//div[@id='configure']/div/div/div/div/div[2]/div/div/div[2]/div[3]/div/table/thead/tr/th/a/span</value>
+=======
+         <value>//span[text()='Role']</value>
+>>>>>>> jakay:Object Repository/ROLES/RoleListingPage/span_Role.rs
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

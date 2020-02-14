@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+:<?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
    <name>div_Users</name>
@@ -7,7 +7,13 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
+<<<<<<< HEAD:Object Repository/Login_Page/Dashboard/Admin Sub-Navigation/div_Users.rs
          <value>//a/*[contains(text(),'Users')]</value>
+||||||| f3ce8bc:Object Repository/ROLES/RoleListingPage/span_Created.rs
+         <value>//div[@id='configure']/div/div/div/div/div[2]/div/div/div[2]/div[3]/div/table/thead/tr/th[4]/a/span</value>
+=======
+         <value>//span[text()='Created']</value>
+>>>>>>> jakay:Object Repository/ROLES/RoleListingPage/span_Created.rs
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

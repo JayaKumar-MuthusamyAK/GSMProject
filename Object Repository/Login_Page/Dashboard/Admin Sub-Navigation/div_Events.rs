@@ -7,7 +7,13 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
+<<<<<<< HEAD:Object Repository/Login_Page/Dashboard/Admin Sub-Navigation/div_Events.rs
          <value>//a/*[contains(text(),'Events')]</value>
+||||||| f3ce8bc:Object Repository/ROLES/RoleListingPage/span_No Users.rs
+         <value>//div[@id='configure']/div/div/div/div/div[2]/div/div/div[2]/div[3]/div/table/thead/tr/th[2]/a/span</value>
+=======
+         <value>//span[text()='No Users']</value>
+>>>>>>> jakay:Object Repository/ROLES/RoleListingPage/span_No Users.rs
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

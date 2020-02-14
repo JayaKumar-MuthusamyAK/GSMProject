@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='init']/div/div[2]/div/nav/div/ul/li/a</value>
+         <value>(//div[@class='container']/ul/li[1]/a)[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

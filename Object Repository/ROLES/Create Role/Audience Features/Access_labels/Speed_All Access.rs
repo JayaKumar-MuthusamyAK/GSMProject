@@ -7,7 +7,13 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
+<<<<<<< HEAD:Object Repository/ROLES/Create Role/Audience Features/Access_labels/Speed_All Access.rs
          <value>(//span[text()='All Access'])[2]</value>
+||||||| f3ce8bc:Object Repository/ROLES/RoleListingPage/span_Status.rs
+         <value>//div[@id='configure']/div/div/div/div/div[2]/div/div/div[2]/div[3]/div/table/thead/tr/th[3]/a/span</value>
+=======
+         <value>//span[text()='Status']</value>
+>>>>>>> jakay:Object Repository/ROLES/RoleListingPage/span_Status.rs
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

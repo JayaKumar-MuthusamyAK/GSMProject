@@ -7,7 +7,13 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
+<<<<<<< HEAD:Object Repository/ROLES/Roles_page/Hamburger/button_Active_dropdown-toggle btn btn-icon btn-light.rs
          <value>(//button[@type='button'])[4]</value>
+||||||| f3ce8bc:Object Repository/ROLES/RoleListingPage/span_Modified.rs
+         <value>//div[@id='configure']/div/div/div/div/div[2]/div/div/div[2]/div[3]/div/table/thead/tr/th[5]/a/span</value>
+=======
+         <value>//span[text()='Modified']</value>
+>>>>>>> jakay:Object Repository/ROLES/RoleListingPage/span_Modified.rs
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
