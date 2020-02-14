@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='configure']/div/div/div/div/div[2]/div/div/div/div</value>
+         <value>//*/text()[normalize-space(.)='Role Manager']/parent::*</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

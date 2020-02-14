@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='configure']/div/div/div/div/div[2]/div/div/div/div/div/button/span</value>
+         <value>//span[@class='caret']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

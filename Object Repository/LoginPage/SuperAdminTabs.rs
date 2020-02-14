@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='collapsible-panel-example-1--body']/div/div/div</value>
+         <value>//div[@id='collapsible-panel-example-1--body']/div/div/div[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
