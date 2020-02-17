@@ -18,22 +18,26 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Atlas Platform/OnBoard/Login/LoginWithRootAdmin'), [('user_Email') : 'navaraj@totient.co.in'
+not_run: WebUI.callTestCase(findTestCase('Atlas Platform/OnBoard/Login/LoginWithRootAdmin'), [('user_Email') : 'navaraj@totient.co.in'
         , ('user_Password') : 'Totient@123'], FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('HeaderMenus/contentmeu'))
 
 WebUI.click(findTestObject('Login_Page/Dashboard/Content Sub-Navigation/div_Images'))
 
-WebUI.click(findTestObject('Object Repository/CONTENT/Images/all_Image_textwithcount'))
+WebUI.click(findTestObject('CONTENT/Image_Listing/all_Image_textwithcount'))
 
-WebUI.setText(findTestObject('CONTENT/Images/image_search_box'), 'aaaaa' + Keys.ENTER)
+WebUI.clearText(findTestObject('CONTENT/Image_Listing/image_search_box'))
 
 WebUI.delay(5)
 
-String text = WebUI.getText(findTestObject('CONTENT/Images/showingtextforpagination'))
+WebUI.setText(findTestObject('CONTENT/Image_Listing/image_search_box'), 'aaaaa' + Keys.ENTER)
 
-int resultfound_count = Integer.parseInt(text.split('of')[1].split(' ')[1].trim())
+WebUI.delay(5)
+
+String text = WebUI.getText(findTestObject('CONTENT/Image_Listing/showingtextforpagination'))
+
+int resultfound_count = Integer.parseInt(((text.split('of')[1]).split(' ')[1]).trim())
 
 WebUI.verifyEqual(resultfound_count, 0)
 
