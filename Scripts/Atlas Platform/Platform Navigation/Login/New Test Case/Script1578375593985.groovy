@@ -15,7 +15,12 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+<<<<<<< HEAD
 <<<<<<< HEAD:Scripts/Atlas Platform/Configuration Management/Platform Management/ROLES/Role Listing grid/RLG-031 Verify Filter link in Role Manager page/Script1581659064017.groovy
+=======
+<<<<<<< HEAD:Scripts/Atlas Platform/Platform Navigation/Login/New Test Case/Script1578375593985.groovy
+=======
+>>>>>>> uday
 WebUI.callTestCase(findTestCase('Atlas Platform/Configuration Management/Platform Management/ROLES/Navigation'), [:], 
     FailureHandling.STOP_ON_FAILURE)
 
@@ -29,5 +34,9 @@ WebUI.verifyElementPresent(findTestObject('ROLES/Roles_page/Filter_link/span_Arc
 
 WebUI.verifyElementPresent(findTestObject('ROLES/Roles_page/Filter_link/button_Apply'), 0)
 
+<<<<<<< HEAD
 =======
 >>>>>>> 87708f0dd43aa6bc23a6e8e66a1d986b699b4520:Scripts/Atlas Platform/Platform Navigation/Login/New Test Case/Script1578375593985.groovy
+=======
+>>>>>>> master:Scripts/Atlas Platform/Configuration Management/Platform Management/ROLES/Role Listing grid/RLG-031 Verify Filter link in Role Manager page/Script1581659064017.groovy
+>>>>>>> uday
