@@ -15,9 +15,13 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-<<<<<<< HEAD
+<<<<<<< HEAD:Scripts/Atlas Platform/Configuration Management/Platform Management/ROLES/Role Listing grid/Search for an Existing Role/Script1581665188669.groovy
+not_run: WebUI.callTestCase(findTestCase('Atlas Platform/Configuration Management/Platform Management/ROLES/Roles Navigation'), 
+=======
+<<<<<<< HEAD:Scripts/Atlas Platform/Configuration Management/Platform Management/ROLES/Role Listing Grid/Search the Created Role Role/Script1581936631567.groovy
 <<<<<<< HEAD:Scripts/Atlas Platform/Configuration Management/Platform Management/ROLES/Role Listing Grid/Search the Created Role Role/Script1581936631567.groovy
 not_run: WebUI.callTestCase(findTestCase('Atlas Platform/Configuration Management/Platform Management/ROLES/Navigation'), 
+>>>>>>> b185aeae1fae384cb0e511113bc1c897933fe436:Scripts/Atlas Platform/Configuration Management/Platform Management/ROLES/Role Listing Grid/Search the Created Role Role/Script1581936631567.groovy
     [:], FailureHandling.CONTINUE_ON_FAILURE)
 =======
 WebUI.click(findTestObject('Logout/My Account'))
@@ -25,6 +29,12 @@ WebUI.click(findTestObject('Logout/My Account'))
 
 WebUI.click(findTestObject('Logout/li_Log Out'))
 
+<<<<<<< HEAD:Scripts/Atlas Platform/Configuration Management/Platform Management/ROLES/Role Listing grid/Search for an Existing Role/Script1581665188669.groovy
+WebUI.sendKeys(findTestObject('ROLES/Roles_page/Search Box'), findTestData('null').getValue(3, 1) + Keys.ENTER)
+
+WebUI.verifyElementText(findTestObject('ROLES/Roles_page/Search text field/validate created role'), findTestData('xlsx files/Roles').getValue(
+        3, 1))
+=======
 <<<<<<< HEAD:Scripts/Atlas Platform/Configuration Management/Platform Management/ROLES/Role Listing Grid/Search the Created Role Role/Script1581936631567.groovy
 WebUI.sendKeys(findTestObject('ROLES/Roles_page/Search Box'), GlobalVariable.ROLENAME1 + Keys.ENTER)
 
@@ -53,5 +63,6 @@ WebUI.sendKeys(findTestObject('ROLES/Roles_page/Search Box'), GlobalVariable.ROL
 
 WebUI.verifyElementText(findTestObject('ROLES/Roles_page/role name'), GlobalVariable.ROLENAME1)
 >>>>>>> master:Scripts/Atlas Platform/Configuration Management/Platform Management/ROLES/Role Listing Grid/Search the Created Role Role/Script1581936631567.groovy
->>>>>>> uday
+>>>>>>> uday:Scripts/Atlas Platform/Configuration Management/Platform Management/ROLES/Role Listing grid/Search for an Existing Role/Script1581665188669.groovy
+>>>>>>> b185aeae1fae384cb0e511113bc1c897933fe436:Scripts/Atlas Platform/Configuration Management/Platform Management/ROLES/Role Listing Grid/Search the Created Role Role/Script1581936631567.groovy
 

@@ -22,10 +22,37 @@ WebUI.click(findTestObject('ROLES/Role_Navigation/a_ADMIN'))
 
 WebUI.click(findTestObject('ROLES/Roles_page/Create Role_button'))
 
+<<<<<<< HEAD
+WebUI.sendKeys(findTestObject('ROLES/Create Role/New Role_page/input_Role Name_name'), findTestData('xlsx files/Roles').getValue(
+        3, 1))
+
+WebUI.sendKeys(findTestObject('ROLES/Create Role/New Role_page/textarea_Role Description_description'), findTestData('xlsx files/Roles').getValue(
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 WebUI.setText(findTestObject('ROLES/Create Role/New Role_page/input_Role Name_name'), findTestData('xlsx files/Roles').getValue(
         3, 1))
 
 WebUI.setText(findTestObject('ROLES/Create Role/New Role_page/textarea_Role Description_description'), findTestData('xlsx files/Roles').getValue(
+=======
+>>>>>>> uday
+GlobalVariable.ROLENAME1 = findTestData('Roles').getValue(3, 1)
+
+WebUI.sendKeys(findTestObject('ROLES/Create Role/New Role_page/input_Role Name_name'), GlobalVariable.ROLENAME1)
+
+WebUI.sendKeys(findTestObject('ROLES/Create Role/New Role_page/textarea_Role Description_description'), findTestData('Roles').getValue(
+<<<<<<< HEAD
+=======
+WebUI.setText(findTestObject('ROLES/Create Role/New Role_page/input_Role Name_name'), findTestData('xlsx files/Roles').getValue(
+        3, 1))
+
+WebUI.setText(findTestObject('ROLES/Create Role/New Role_page/textarea_Role Description_description'), findTestData('xlsx files/Roles').getValue(
+>>>>>>> 87708f0dd43aa6bc23a6e8e66a1d986b699b4520
+=======
+>>>>>>> master
+>>>>>>> uday
+>>>>>>> b185aeae1fae384cb0e511113bc1c897933fe436
         4, 1))
 
 WebUI.click(findTestObject('ROLES/Create Role/New Role_page/div_Create'))

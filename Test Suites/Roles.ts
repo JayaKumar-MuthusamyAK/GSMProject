@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Roles Test Suite(sanity)</name>
+   <name>Roles</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -20,7 +20,7 @@
       <guid>cc154f57-8ec4-479f-b164-38ea410b6742</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Atlas Platform/Configuration Management/Platform Management/ROLES/Role Listing grid/Search the Created Role Role</testCaseId>
+      <testCaseId>Test Cases/Atlas Platform/Configuration Management/Platform Management/ROLES/Role Listing grid/Search for an Existing Role</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>a153a739-3aee-47a1-a9c3-0f7266a9b3a6</guid>
@@ -32,6 +32,6 @@
       <guid>ebbbeff8-9f34-4aea-8158-19c75e2f06ca</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Atlas Platform/Configuration Management/Platform Management/ROLES/Change Status/Change the status of a Role</testCaseId>
+      <testCaseId>Test Cases/Atlas Platform/Configuration Management/Platform Management/ROLES/Change Status/Change the status</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

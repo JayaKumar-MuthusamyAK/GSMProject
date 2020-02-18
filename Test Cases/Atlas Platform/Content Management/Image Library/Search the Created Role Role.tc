@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-<<<<<<< HEAD
+<<<<<<< HEAD:Test Cases/Atlas Platform/Content Management/Image Library/Search the Created Role Role.tc
 <<<<<<< HEAD:Test Cases/Atlas Platform/Content Management/Image Library/Search the Created Role Role.tc
    <name>Search the Created Role Role</name>
 =======
@@ -13,7 +13,7 @@
 =======
    <name>Search the Created Role Role</name>
 >>>>>>> master:Test Cases/Atlas Platform/Content Management/Image Library/Search the Created Role Role.tc
->>>>>>> uday
+>>>>>>> uday:Test Cases/Atlas Platform/Configuration Management/Platform Management/ROLES/Role Listing grid/Search for an Existing Role.tc
    <tag></tag>
    <comment></comment>
    <testCaseGuid>c2127f48-ef4e-4cab-9326-d87f37796eed</testCaseGuid>
