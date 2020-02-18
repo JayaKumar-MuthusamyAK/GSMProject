@@ -15,16 +15,19 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Atlas Platform/Configuration Management/Platform Management/ROLES/Roles Navigation'), [:], 
-    FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.callTestCase(findTestCase('Atlas Platform/Configuration Management/Platform Management/ROLES/Roles Navigation'), 
+    [:], FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('ROLES/Roles_page/Filter'))
+not_run: WebUI.click(findTestObject('ROLES/Role_Navigation/a_ADMIN'))
 
-WebUI.verifyElementPresent(findTestObject('ROLES/Roles_page/Filter_link/li_Status'), 0)
+WebUI.click(findTestObject('ROLES/Roles_page/Hamburger/button_hamburger'))
 
-WebUI.verifyElementPresent(findTestObject('ROLES/Roles_page/Filter_link/span_Active'), 0)
+WebUI.click(findTestObject('ROLES/Roles_page/Hamburger/a_Change Status'))
 
-WebUI.verifyElementPresent(findTestObject('ROLES/Roles_page/Filter_link/span_Archived'), 0)
+WebUI.click(findTestObject('ROLES/Change Status/Archived'))
 
-WebUI.verifyElementPresent(findTestObject('ROLES/Roles_page/Filter_link/button_Apply'), 0)
+WebUI.click(findTestObject('ROLES/Change Status/Confirm_button'))
+
+WebUI.verifyElementText(findTestObject('ROLES/Change Status/status_archived'), findTestData('xlsx files/Roles').getValue(
+        5, 2))
 
