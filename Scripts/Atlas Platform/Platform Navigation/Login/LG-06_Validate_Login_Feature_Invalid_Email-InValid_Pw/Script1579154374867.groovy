@@ -18,7 +18,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('http://dqfn4clx0bazt.cloudfront.net/')
+WebUI.navigateToUrl(GlobalVariable.URL)
 
 WebUI.setText(findTestObject('Login_Page/Page_/email address placeholder'), Email)
 
@@ -29,5 +29,5 @@ WebUI.click(findTestObject('Login_Page/Page_/Log In button'))
 WebUI.verifyElementPresent(findTestObject('Login_Page/Page_/Error Message_Password-Required field'), 0)
 
 WebUI.verifyElementText(findTestObject('Login_Page/Page_/Error Message_Password-Required field'), findTestData('AMP_Y').getValue(
-        3, 68))
+        3, 66))
 

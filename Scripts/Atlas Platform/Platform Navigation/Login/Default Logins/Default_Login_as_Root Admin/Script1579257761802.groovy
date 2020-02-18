@@ -21,10 +21,12 @@ import org.openqa.selenium.WebDriver as WebDriver
 import java.awt.Robot as Robot
 import java.awt.event.KeyEvent as KeyEvent
 
-WebUI.openBrowser('')
+not_run: WebUI.openBrowser('')
+
+WebUI.callTestCase(findTestCase('Atlas Platform/OnBoard/SwictherDBValidation/TC_100_ForSecurityURLSAcceptance'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 //WebDriver driver = DriverFactory.getWebDriver()
-WebUI.navigateToUrl('http://dqfn4clx0bazt.cloudfront.net/')
+WebUI.navigateToUrl('https://atlas-dev.gsm.auto/')
 
 WebUI.setText(findTestObject('Login_Page/Page_/email address placeholder'), Email)
 

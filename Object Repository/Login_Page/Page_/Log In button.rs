@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@type='button']</value>
+         <value>//button[contains(text(),'Log In')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

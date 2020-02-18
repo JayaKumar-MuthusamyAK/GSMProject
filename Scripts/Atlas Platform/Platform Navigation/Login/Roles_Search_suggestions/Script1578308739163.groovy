@@ -29,7 +29,7 @@ WebUI.openBrowser('')
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-WebUI.navigateToUrl('http://dqfn4clx0bazt.cloudfront.net/')
+WebUI.navigateToUrl(GlobalVariable.URL)
 
 WebUI.setText(findTestObject('Object Repository/Login_Page/Page_/email address placeholder'), Email)
 
@@ -41,7 +41,7 @@ WebUI.click(findTestObject('Login_Page/Roles/div'), FailureHandling.CONTINUE_ON_
 
 WebUI.setText(findTestObject('Login_Page/Roles/input_All Roles (1842)_form-control'), search_string, FailureHandling.CONTINUE_ON_FAILURE)
 
-results = driver.findElements(By.xpath("//strong[text()='Super']/../.."))
+results = driver.findElements(By.xpath('//strong[text()=\'Super\']/../..'))
 
 int i = 0
 
