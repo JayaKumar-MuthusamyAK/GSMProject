@@ -15,16 +15,3 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Atlas Platform/Configuration Management/Platform Management/ROLES/Roles Navigation'), [:], 
-    FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('ROLES/Roles_page/Filter'))
-
-WebUI.verifyElementPresent(findTestObject('ROLES/Roles_page/Filter_link/li_Status'), 0)
-
-WebUI.verifyElementPresent(findTestObject('ROLES/Roles_page/Filter_link/span_Active'), 0)
-
-WebUI.verifyElementPresent(findTestObject('ROLES/Roles_page/Filter_link/span_Archived'), 0)
-
-WebUI.verifyElementPresent(findTestObject('ROLES/Roles_page/Filter_link/button_Apply'), 0)
-

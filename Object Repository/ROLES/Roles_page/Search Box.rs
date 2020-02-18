@@ -6,11 +6,11 @@
    <elementGuidId>ce5da189-6b70-48ba-95d2-5fb60200075d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//div[@id='SearchBox']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@placeholder='Search']</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
