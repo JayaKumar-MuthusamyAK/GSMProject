@@ -29,7 +29,7 @@ import java.util.concurrent.TimeUnit as TimeUnit
 import org.openqa.selenium.WebElement as WebElement
 import org.openqa.selenium.chrome.ChromeDriver as ChromeDriver
 
-WebUI.callTestCase(findTestCase('Atlas Platform/Configuration Management/Platform Management/ROLES/Roles Navigation'), [:], 
+WebUI.callTestCase(findTestCase('Atlas Platform/Configuration Management/Platform Management/ROLES/Navigation'), [:], 
     FailureHandling.STOP_ON_FAILURE)
 
 WebDriver driver = DriverFactory.getWebDriver()
