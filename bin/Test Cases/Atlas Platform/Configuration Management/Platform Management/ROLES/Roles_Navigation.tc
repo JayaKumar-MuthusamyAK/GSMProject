@@ -1,0 +1,19 @@
+<<<<<<< HEAD:Test Cases/Atlas Platform/OnBoard/Login/LoginWithRootAdmin.tc
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>LoginWithRootAdmin</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c0faaf21-2b88-4afc-bdf2-6ebd971fcda9</testCaseGuid>
+</TestCaseEntity>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Roles_Navigation</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>12e976f2-7e6d-41dc-93ae-8911866404d0</testCaseGuid>
+</TestCaseEntity>
+>>>>>>> f52e67f5aa6e1df5d871f8eba4e074a3f9b3468a:Test Cases/Atlas Platform/Configuration Management/Platform Management/ROLES/Roles_Navigation.tc

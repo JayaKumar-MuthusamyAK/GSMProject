@@ -89,20 +89,7 @@ public class CustomKeyword {
 		return driver.getTitle();
 	}
 
-	@Keyword
-	public static List<WebElement> findElements(TestObject testObject){
-
-		return WebUiCommonHelper.findWebElements(testObject, 20);
-	}
-
-	@Keyword
-	public static WebElement findElement(TestObject testObject){
-
-		return WebUiCommonHelper.findWebElement(testObject, 20);
-	}
-
-
-
+	
 	@Keyword
 	public static void takeScreenShot(){
 
@@ -226,5 +213,29 @@ public class CustomKeyword {
 		return domainname;
 	}
 
-
+	@Keyword
+	public boolean selectDropDownValue(List<WebElement> webelements, String value){
+		
+		for(int i=0; i<webelements.size();i++){
+			if(value.equalsIgnoreCase(webelements.get(i).getText())){
+				webelements.get(i).click();
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	@Keyword
+	public String getRandomString(){
+		
+		return RandomStringUtils.randomAlphabetic(100)
+		
+	}
+	
+	@Keyword
+	public String getRandomName(String name){
+		
+		int number = new Random().nextInt(1000)		
+		return name+number;
+	}
 }

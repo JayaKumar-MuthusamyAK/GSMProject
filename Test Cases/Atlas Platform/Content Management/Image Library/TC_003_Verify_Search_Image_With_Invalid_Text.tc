@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_003_Verify_Search_Image_With_Invalid_Text</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c1e4a506-1561-4e0e-8d7d-4c55b83d4aa8</testCaseGuid>
+</TestCaseEntity>

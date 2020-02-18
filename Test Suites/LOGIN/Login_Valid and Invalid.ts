@@ -11,36 +11,36 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <testSuiteGuid>799a4984-160f-4f97-8513-c973e8d5b44e</testSuiteGuid>
    <testCaseLink>
-      <guid>eca70552-e8dc-46af-9fa9-7550c8d36f2e</guid>
+      <guid>a301abda-0e93-43d3-94de-ea34100dae7c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Atlas Platform/Platform Navigation/Login/Valid_Login</testCaseId>
+      <testCaseId>Test Cases/Atlas Platform/OnBoard/SwictherDBValidation/TC_100_ForSecurityURLSAcceptance</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8aa90486-5253-4057-ac00-47994c5742fa</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Atlas Platform/Platform Navigation/Login/InValid Pasword_Login</testCaseId>
       <testDataLink>
          <combinationType>MANY</combinationType>
-         <id>3a269d68-4c3d-422c-8b16-5b3d096cd8ab</id>
+         <id>3de4702d-a6a4-4809-8c9f-802158e776b1</id>
          <iterationEntity>
             <iterationType>RANGE</iterationType>
-            <value>1-16</value>
+            <value>43-57</value>
          </iterationEntity>
          <testDataId>Data Files/AMP_Y</testDataId>
       </testDataLink>
       <variableLink>
-         <testDataLinkId>3a269d68-4c3d-422c-8b16-5b3d096cd8ab</testDataLinkId>
+         <testDataLinkId>3de4702d-a6a4-4809-8c9f-802158e776b1</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>Email</value>
-         <variableId>b3b2104a-c26f-42a1-9794-dda27fc68d0a</variableId>
+         <variableId>87a1705d-bfaa-4414-a832-e4d39b0964e7</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>3a269d68-4c3d-422c-8b16-5b3d096cd8ab</testDataLinkId>
+         <testDataLinkId>3de4702d-a6a4-4809-8c9f-802158e776b1</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>Password</value>
-         <variableId>47b7ce68-91d4-485c-aba9-31c7cbb43c65</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>8223df05-ee91-4934-bff1-33b5c601100c</variableId>
+         <variableId>6f7b3bb8-9f36-49d3-b444-29f2b74f9fcd</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
@@ -53,7 +53,7 @@
          <id>bf8bdddd-7cab-4c1e-bd4b-53e566a935e4</id>
          <iterationEntity>
             <iterationType>RANGE</iterationType>
-            <value>19-38</value>
+            <value>22-41</value>
          </iterationEntity>
          <testDataId>Data Files/AMP_Y</testDataId>
       </testDataLink>
@@ -71,30 +71,36 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>8aa90486-5253-4057-ac00-47994c5742fa</guid>
+      <guid>668d59fd-6aa8-4c0b-8237-12d2d8a4d7f8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Atlas Platform/Platform Navigation/Login/InValid Pasword_Login</testCaseId>
+      <testCaseId>Test Cases/Atlas Platform/Platform Navigation/Login/LG-01_Validate_Login_Feature_with_Valid_Credentials</testCaseId>
       <testDataLink>
-         <combinationType>MANY</combinationType>
-         <id>3de4702d-a6a4-4809-8c9f-802158e776b1</id>
+         <combinationType>ONE</combinationType>
+         <id>bfd1b5e3-9fc8-4487-9684-e1261aac0c95</id>
          <iterationEntity>
             <iterationType>RANGE</iterationType>
-            <value>40-54</value>
+            <value>4-19</value>
          </iterationEntity>
          <testDataId>Data Files/AMP_Y</testDataId>
       </testDataLink>
       <variableLink>
-         <testDataLinkId>3de4702d-a6a4-4809-8c9f-802158e776b1</testDataLinkId>
+         <testDataLinkId>bfd1b5e3-9fc8-4487-9684-e1261aac0c95</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>Email</value>
-         <variableId>87a1705d-bfaa-4414-a832-e4d39b0964e7</variableId>
+         <variableId>7ee908a4-48bf-4a84-94aa-40bcc8d3a93d</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>3de4702d-a6a4-4809-8c9f-802158e776b1</testDataLinkId>
+         <testDataLinkId>bfd1b5e3-9fc8-4487-9684-e1261aac0c95</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>Password</value>
-         <variableId>6f7b3bb8-9f36-49d3-b444-29f2b74f9fcd</variableId>
+         <variableId>5c3d6ca3-f53c-4e7d-b534-bf68eac1026d</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>213242b4-5603-4641-9f49-12b3085522f9</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

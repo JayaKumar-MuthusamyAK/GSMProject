@@ -18,15 +18,19 @@ import internal.GlobalVariable as GlobalVariable
 import org.junit.After as After
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+not_run: WebUI.openBrowser('')
 
-WebUI.navigateToUrl('http://dqfn4clx0bazt.cloudfront.net/')
+not_run: WebUI.navigateToUrl('http://dqfn4clx0bazt.cloudfront.net/')
 
-WebUI.setText(findTestObject('Login_Page/Page_/email address placeholder'), Email)
+not_run: WebUI.setText(findTestObject('Login_Page/Page_/email address placeholder'), Email)
 
-WebUI.setText(findTestObject('Login_Page/Page_/Password placeholder'), Password)
+not_run: WebUI.setText(findTestObject('Login_Page/Page_/Password placeholder'), Password)
 
-WebUI.click(findTestObject('Login_Page/Page_/Log In button'))
+not_run: WebUI.click(findTestObject('Login_Page/Page_/Log In button'))
+
+WebUI.callTestCase(findTestCase('Atlas Platform/Platform Navigation/Login/Default Logins/Default_Login_as_Root Admin'), 
+    [('Email') : findTestData('AMP_Y').getValue(1, 1), ('Password') : findTestData('AMP_Y').getValue(2, 1), ('dashboard_exp_title') : ''], 
+    FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.verifyElementPresent(findTestObject('Login_Page/Page_/div_Invalid Email Format'), 30)
 
