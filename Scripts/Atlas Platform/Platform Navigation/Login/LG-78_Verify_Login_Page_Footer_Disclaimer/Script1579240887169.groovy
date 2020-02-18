@@ -18,7 +18,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('http://dqfn4clx0bazt.cloudfront.net')
+WebUI.navigateToUrl(GlobalVariable.URL)
 
 WebUI.verifyElementPresent(findTestObject('Login_Page/Page_/Footer 2019 GS Marketing All Rights Reserved'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 

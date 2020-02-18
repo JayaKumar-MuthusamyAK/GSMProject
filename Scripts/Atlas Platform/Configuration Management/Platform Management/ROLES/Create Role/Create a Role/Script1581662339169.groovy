@@ -22,10 +22,10 @@ WebUI.click(findTestObject('ROLES/Role_Navigation/a_ADMIN'))
 
 WebUI.click(findTestObject('ROLES/Roles_page/Create Role_button'))
 
-WebUI.sendKeys(findTestObject('ROLES/Create Role/New Role_page/input_Role Name_name'), findTestData('xlsx files/Roles').getValue(
+WebUI.setText(findTestObject('ROLES/Create Role/New Role_page/input_Role Name_name'), findTestData('xlsx files/Roles').getValue(
         3, 1))
 
-WebUI.sendKeys(findTestObject('ROLES/Create Role/New Role_page/textarea_Role Description_description'), findTestData('xlsx files/Roles').getValue(
+WebUI.setText(findTestObject('ROLES/Create Role/New Role_page/textarea_Role Description_description'), findTestData('xlsx files/Roles').getValue(
         4, 1))
 
 WebUI.click(findTestObject('ROLES/Create Role/New Role_page/div_Create'))

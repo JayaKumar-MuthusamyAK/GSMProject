@@ -24,7 +24,7 @@ import java.awt.event.KeyEvent as KeyEvent
 WebUI.openBrowser('')
 
 //WebDriver driver = DriverFactory.getWebDriver()
-WebUI.navigateToUrl('http://dqfn4clx0bazt.cloudfront.net/')
+WebUI.navigateToUrl(GlobalVariable.URL)
 
 WebUI.click(findTestObject('Login_Page/Page_/Forgot Password'))
 

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@type='button'])[2]</value>
+         <value>//button[text()='Forgot Password?']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

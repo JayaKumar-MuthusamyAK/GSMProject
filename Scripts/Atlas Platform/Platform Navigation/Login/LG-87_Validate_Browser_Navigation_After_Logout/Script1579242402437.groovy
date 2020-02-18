@@ -18,13 +18,13 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('http://dqfn4clx0bazt.cloudfront.net/')
+WebUI.navigateToUrl(GlobalVariable.URL)
 
 LoginPage = WebUI.getWindowTitle()
 
-WebUI.setText(findTestObject('Login_Page/Page_/email address placeholder'), 'yat@gm.co')
+WebUI.setText(findTestObject('Login_Page/Page_/email address placeholder'), findTestData('AMP_Y').getValue(1, 1))
 
-WebUI.setEncryptedText(findTestObject('Login_Page/Page_/Password placeholder'), 'OtrYFRg/YkoNEYy5Z+M3eg==')
+WebUI.setEncryptedText(findTestObject('Login_Page/Page_/Password placeholder'), findTestData('AMP_Y').getValue(2, 1))
 
 WebUI.click(findTestObject('Login_Page/Page_/Log In button'))
 

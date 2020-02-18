@@ -18,7 +18,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('http://dqfn4clx0bazt.cloudfront.net/')
+WebUI.navigateToUrl(GlobalVariable.URL)
 
 WebUI.setText(findTestObject('Login_Page/Page_/email address placeholder'), Email)
 
@@ -29,18 +29,18 @@ WebUI.click(findTestObject('Login_Page/Page_/Log In button'))
 WebUI.verifyElementPresent(findTestObject('Login_Page/Page_/Error Message_Password-Required field'), 0)
 
 WebUI.verifyElementText(findTestObject('Login_Page/Page_/Error Message_Password-Required field'), findTestData('AMP_Y').getValue(
-        3, 64))
+        3, 67))
 
 WebUI.verifyElementPresent(findTestObject('Login_Page/Page_/Error Message_Email Address-Required Field'), 0)
 
 WebUI.verifyElementText(findTestObject('Login_Page/Page_/Error Message_Email Address-Required Field'), findTestData('AMP_Y').getValue(
-        3, 65))
+        3, 67))
 
 clr = WebUI.getCSSValue(findTestObject('Login_Page/Page_/email address user svg icon'), 'fill')
 
-WebUI.verifyEqual(clr, findTestData('Login page CSS').getValue(4, 19))
+WebUI.verifyEqual(clr, findTestData('Login page CSS').getValue(4, 7))
 
 clr = WebUI.getCSSValue(findTestObject('Login_Page/Page_/Password lock svg icon'), 'fill')
 
-WebUI.verifyEqual(clr, findTestData('Login page CSS').getValue(4, 20))
+WebUI.verifyEqual(clr, findTestData('Login page CSS').getValue(4, 12))
 

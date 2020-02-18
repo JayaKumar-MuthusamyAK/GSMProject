@@ -29,7 +29,7 @@ WebUI.openBrowser('')
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-WebUI.navigateToUrl('http://dqfn4clx0bazt.cloudfront.net/')
+WebUI.navigateToUrl(GlobalVariable.URL)
 
 WebUI.setText(findTestObject('Object Repository/Login_Page/Page_/email address placeholder'), Email)
 
@@ -41,9 +41,7 @@ WebUI.click(findTestObject('Login_Page/Dashboard/ADMIN Module'))
 
 WebUI.click(findTestObject('Login_Page/Roles/div_Roles'))
 
-boolean en=(driver.findElement(By.xpath("//a[@title='Previous page']")).enabled)
+boolean en = driver.findElement(By.xpath('//a[@title=\'Previous page\']')).enabled
 
-println en
-
-
+println(en)
 

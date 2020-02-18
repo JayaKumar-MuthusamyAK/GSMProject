@@ -24,7 +24,7 @@ import java.awt.event.KeyEvent as KeyEvent
 WebUI.openBrowser('')
 
 //WebDriver driver = DriverFactory.getWebDriver()
-WebUI.navigateToUrl('http://dqfn4clx0bazt.cloudfront.net/')
+WebUI.navigateToUrl(GlobalVariable.URL)
 
 WebUI.setText(findTestObject('Login_Page/Page_/email address placeholder'), Email)
 

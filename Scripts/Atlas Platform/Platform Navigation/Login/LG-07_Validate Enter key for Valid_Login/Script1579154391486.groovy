@@ -15,28 +15,26 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-
-import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebDriver as WebDriver
 //import org.openqa.selenium.interactions.Actions
 //import com.kms.katalon.core.webui.driver.DriverFactory
-import java.awt.Robot;
-import java.awt.event.KeyEvent;
+import java.awt.Robot as Robot
+import java.awt.event.KeyEvent as KeyEvent
 
 WebUI.openBrowser('')
 
 //WebDriver driver = DriverFactory.getWebDriver()
-
-WebUI.navigateToUrl('http://dqfn4clx0bazt.cloudfront.net/')
+WebUI.navigateToUrl(GlobalVariable.URL)
 
 WebUI.setText(findTestObject('Login_Page/Page_/email address placeholder'), Email)
 
 WebUI.setText(findTestObject('Login_Page/Page_/Password placeholder'), Password)
 
-Robot r=new Robot()
+Robot r = new Robot()
 
 r.keyPress(KeyEvent.VK_ENTER)
-r.keyRelease(KeyEvent.VK_ENTER)
 
+r.keyRelease(KeyEvent.VK_ENTER)
 
 dashboard_act_title = WebUI.getWindowTitle()
 
