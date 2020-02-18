@@ -3,7 +3,7 @@
    <description></description>
    <name>a_Message Features</name>
    <tag></tag>
-   <elementGuidId>f9f81a42-ce93-4568-a40a-94a85cbe8186</elementGuidId>
+   <elementGuidId>cf79c286-3018-4265-a758-88bad04d417b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

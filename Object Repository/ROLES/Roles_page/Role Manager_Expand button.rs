@@ -3,7 +3,7 @@
    <description></description>
    <name>Role Manager_Expand button</name>
    <tag></tag>
-   <elementGuidId>532321b7-13a1-4fa7-8ab3-8cfea5174af8</elementGuidId>
+   <elementGuidId>b530fedc-1abf-427f-8d32-e23a8ff5f147</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

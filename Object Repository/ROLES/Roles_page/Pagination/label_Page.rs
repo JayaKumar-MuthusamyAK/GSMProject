@@ -3,11 +3,11 @@
    <description></description>
    <name>label_Page</name>
    <tag></tag>
-   <elementGuidId>c38628af-fdac-4538-87e4-dff24381a0af</elementGuidId>
+   <elementGuidId>8b0f894c-9b9e-4280-8b3d-c0ff95e4c76d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='configure']/div/div/div/div/div[2]/div/div/div[2]/div[4]/div[2]/ul/li[2]/div/label</value>
+         <value>//label[text()='Page']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

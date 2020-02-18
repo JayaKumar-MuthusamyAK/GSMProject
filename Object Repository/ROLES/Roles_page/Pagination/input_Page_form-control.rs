@@ -3,11 +3,11 @@
    <description></description>
    <name>input_Page_form-control</name>
    <tag></tag>
-   <elementGuidId>fcaf251a-f3cd-47e6-96ba-f4fa0ab695d8</elementGuidId>
+   <elementGuidId>2f35b702-02bb-4573-ae6e-a4c7690be04b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@value='1']</value>
+         <value>(//input[@class='form-control'])[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

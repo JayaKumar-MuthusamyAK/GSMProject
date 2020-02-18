@@ -3,7 +3,7 @@
    <description></description>
    <name>Filter</name>
    <tag></tag>
-   <elementGuidId>f04a8cee-e178-410b-82fd-c163f769c0ff</elementGuidId>
+   <elementGuidId>351d8125-b78e-4378-94ec-c96e23940333</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;init&quot;]/div/div/div/div[2]/div</value>
+         <value>//div[text()='© 2020 GS Marketing. All Rights Reserved.  | ']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

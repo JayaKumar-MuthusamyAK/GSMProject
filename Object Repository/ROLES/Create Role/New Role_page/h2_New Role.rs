@@ -3,11 +3,11 @@
    <description></description>
    <name>h2_New Role</name>
    <tag></tag>
-   <elementGuidId>160ebc27-fa9e-478c-a108-b4437620a52b</elementGuidId>
+   <elementGuidId>4e9c2ffc-1a05-49e3-bea4-5df069be9520</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='configure']/div/div[2]/div/h2</value>
+         <value>//h2[text()='New Role']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

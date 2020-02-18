@@ -3,7 +3,7 @@
    <description></description>
    <name>Create New Role_button</name>
    <tag></tag>
-   <elementGuidId>8f72952e-d6b1-4b37-8438-288e3bcc9cb4</elementGuidId>
+   <elementGuidId>3baa74e4-7d5a-4c02-b68c-47ca32987071</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

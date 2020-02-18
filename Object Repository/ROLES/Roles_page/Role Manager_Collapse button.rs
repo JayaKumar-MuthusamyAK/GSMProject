@@ -3,7 +3,7 @@
    <description></description>
    <name>Role Manager_Collapse button</name>
    <tag></tag>
-   <elementGuidId>c4e02d6d-18d4-4fc4-a22d-1308164a587a</elementGuidId>
+   <elementGuidId>0a4091bc-e904-4d6b-9c46-ab9d1916c997</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

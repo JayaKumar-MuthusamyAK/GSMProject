@@ -3,7 +3,7 @@
    <description></description>
    <name>span_Active</name>
    <tag></tag>
-   <elementGuidId>51554210-efa9-44cd-b54b-40eac210bdf5</elementGuidId>
+   <elementGuidId>1e40ebf7-3edc-4874-8c97-09a842a457fe</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

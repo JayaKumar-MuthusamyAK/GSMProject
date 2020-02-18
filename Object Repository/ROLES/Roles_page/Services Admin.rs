@@ -3,11 +3,11 @@
    <description></description>
    <name>Services Admin</name>
    <tag></tag>
-   <elementGuidId>7a8b863a-abbd-400d-a9b2-daf5498aac39</elementGuidId>
+   <elementGuidId>c2f03d45-f481-4754-986c-e8b47d44d64e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[text()='Services Admin']</value>
+         <value>//span[text()='Services Admin']</value>
       </entry>
       <entry>
          <key>BASIC</key>

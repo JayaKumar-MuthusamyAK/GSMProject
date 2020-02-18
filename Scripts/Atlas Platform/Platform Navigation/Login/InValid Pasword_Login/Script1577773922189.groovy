@@ -16,7 +16,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+not_run: WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://dqfn4clx0bazt.cloudfront.net/')
 
@@ -27,4 +27,8 @@ WebUI.setText(findTestObject('Login_Page/Page_/Password placeholder'), Password)
 WebUI.click(findTestObject('Login_Page/Page_/Log In button'))
 
 WebUI.verifyElementPresent(findTestObject('Login_Page/Page_/div_Enter Password'), 30)
+
+WebUI.click(findTestObject('ROLES/Role_Navigation/button_Log In'))
+
+WebUI.click(findTestObject('ROLES/Role_Navigation/a_ADMIN'))
 

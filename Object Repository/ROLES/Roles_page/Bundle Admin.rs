@@ -3,11 +3,11 @@
    <description></description>
    <name>Bundle Admin</name>
    <tag></tag>
-   <elementGuidId>e8989234-134c-48e7-b173-27a30e8268aa</elementGuidId>
+   <elementGuidId>f22db1e9-0064-446b-a2ce-dcbe0c235ba5</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[text()='Bundle Admin']</value>
+         <value>//span[text()='Bundle Admin']</value>
       </entry>
       <entry>
          <key>BASIC</key>

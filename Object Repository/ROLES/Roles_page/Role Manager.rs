@@ -3,7 +3,7 @@
    <description></description>
    <name>Role Manager</name>
    <tag></tag>
-   <elementGuidId>8a311b8a-4add-4fc7-86de-4245333d84e2</elementGuidId>
+   <elementGuidId>0a939f0f-6c4e-4c29-9c9c-dfdf8ecb2183</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

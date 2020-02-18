@@ -3,7 +3,7 @@
    <description></description>
    <name>a_Content Features</name>
    <tag></tag>
-   <elementGuidId>92634f58-ced4-4c7f-bfbd-30d081e263b4</elementGuidId>
+   <elementGuidId>23ae7196-63a4-4e76-9500-323a8b1d66a7</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

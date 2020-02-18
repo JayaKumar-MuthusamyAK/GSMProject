@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;init&quot;]/div/div/div/div[2]/div/span</value>
+         <value>//a[text()=' Contact ']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

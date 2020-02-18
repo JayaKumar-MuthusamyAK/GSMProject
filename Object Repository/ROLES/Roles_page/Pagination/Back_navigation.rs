@@ -3,7 +3,7 @@
    <description></description>
    <name>Back_navigation</name>
    <tag></tag>
-   <elementGuidId>27b8038c-c019-4b39-b782-b56815927cea</elementGuidId>
+   <elementGuidId>66af7280-7a99-4bda-946a-f4ac93786139</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

@@ -3,11 +3,11 @@
    <description></description>
    <name>Account Admin</name>
    <tag></tag>
-   <elementGuidId>b1d8a2aa-edd1-46e6-949b-e0f127ff353d</elementGuidId>
+   <elementGuidId>3c06c99f-046e-429a-b74c-8c700b74540f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[text()='Account Admin']</value>
+         <value>//span[text()='Account Admin']</value>
       </entry>
       <entry>
          <key>BASIC</key>
