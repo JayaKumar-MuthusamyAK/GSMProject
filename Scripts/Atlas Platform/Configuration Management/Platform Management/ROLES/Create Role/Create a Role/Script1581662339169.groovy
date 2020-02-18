@@ -15,18 +15,29 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Atlas Platform/Configuration Management/Platform Management/ROLES/Roles Navigation'), [:], 
-    FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Atlas Platform/Configuration Management/Platform Management/ROLES/Navigation'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('ROLES/Role_Navigation/a_ADMIN'))
 
 WebUI.click(findTestObject('ROLES/Roles_page/Create Role_button'))
 
+<<<<<<< HEAD
 WebUI.setText(findTestObject('ROLES/Create Role/New Role_page/input_Role Name_name'), findTestData('xlsx files/Roles').getValue(
         3, 1))
 
 WebUI.setText(findTestObject('ROLES/Create Role/New Role_page/textarea_Role Description_description'), findTestData('xlsx files/Roles').getValue(
+=======
+GlobalVariable.ROLENAME1 = findTestData('Roles').getValue(3, 1)
+
+WebUI.sendKeys(findTestObject('ROLES/Create Role/New Role_page/input_Role Name_name'), GlobalVariable.ROLENAME1)
+
+WebUI.sendKeys(findTestObject('ROLES/Create Role/New Role_page/textarea_Role Description_description'), findTestData('Roles').getValue(
+>>>>>>> master
         4, 1))
 
 WebUI.click(findTestObject('ROLES/Create Role/New Role_page/div_Create'))
+
+WebUI.verifyElementPresent(findTestObject('ROLES/Create Role/ConfirmationPopup_created'), 230)
+
+WebUI.verifyElementText(findTestObject('ROLES/Roles_page/1st Role name in grid'), GlobalVariable.ROLENAME1)
 

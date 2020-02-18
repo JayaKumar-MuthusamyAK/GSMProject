@@ -7,11 +7,11 @@
    <GlobalVariableEntity>
       <description></description>
       <initValue>''</initValue>
-      <name>user_id</name>
+      <name>ROLENAME1</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>null</initValue>
-      <name>conn</name>
+      <initValue>''</initValue>
+      <name>ROLENAME2</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
