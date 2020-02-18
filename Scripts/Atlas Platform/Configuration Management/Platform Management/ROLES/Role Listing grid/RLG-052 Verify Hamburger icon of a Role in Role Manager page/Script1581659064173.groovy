@@ -17,7 +17,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.eclipse.persistence.internal.oxm.record.json.JSONParser.pair_return as pair_return
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Atlas Platform/Configuration Management/Platform Management/ROLES/Roles Navigation'), [:], 
+WebUI.callTestCase(findTestCase('Atlas Platform/Configuration Management/Platform Management/ROLES/Navigation'), [:], 
     FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('ROLES/Roles_page/Hamburger/button_Active_dropdown-toggle btn btn-icon btn-light'))
