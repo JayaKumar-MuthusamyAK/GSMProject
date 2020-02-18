@@ -18,24 +18,24 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Atlas Platform/OnBoard/Login/LoginWithRootAdmin'), [('user_Email') : 'navaraj@totient.co.in'
+not_run: WebUI.callTestCase(findTestCase('Atlas Platform/OnBoard/Login/LoginWithRootAdmin'), [('user_Email') : 'navaraj@totient.co.in'
         , ('user_Password') : 'Totient@123'], FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('HeaderMenus/contentmeu'))
 
 WebUI.click(findTestObject('Login_Page/Dashboard/Content Sub-Navigation/div_Images'))
 
-WebUI.click(findTestObject('Object Repository/CONTENT/Images/all_Image_textwithcount'))
+WebUI.click(findTestObject('CONTENT/Image_Listing/all_Image_textwithcount'))
 
-WebUI.setText(findTestObject('CONTENT/Images/image_search_box'), 'image' + Keys.ENTER)
+WebUI.setText(findTestObject('CONTENT/Image_Listing/image_search_box'), 'image' + Keys.ENTER)
 
 WebUI.delay(5)
 
-String text = WebUI.getText(findTestObject('CONTENT/Images/showingtextforpagination'))
+String text = WebUI.getText(findTestObject('CONTENT/Image_Listing/showingtextforpagination'))
 
 int resultfound_count = Integer.parseInt(((text.split('of')[1]).split(' ')[1]).trim())
 
-List<WebElement> elements = WebUiCommonHelper.findWebElements(findTestObject('CONTENT/Images/column1_Image_Name_Values'), 
+List<WebElement> elements = WebUiCommonHelper.findWebElements(findTestObject('CONTENT/Image_Listing/column1_Image_Name_Values'), 
     0)
 
 int pageValueCount = elements.size()
@@ -44,7 +44,8 @@ if (resultfound_count > 10) {
     while (resultfound_count != pageValueCount) {
         WebUI.click(findTestObject('ROLES/Roles_page/Pagination/front_navigation'))
 
-        elements = WebUiCommonHelper.findWebElements(findTestObject('CONTENT/Images/column1_Image_Name_Values'), 0)
+        elements = WebUiCommonHelper.findWebElements(findTestObject('CONTENT/Image_Listing/column1_Image_Name_Values'), 
+            0)
 
         pageValueCount += elements.size()
 
