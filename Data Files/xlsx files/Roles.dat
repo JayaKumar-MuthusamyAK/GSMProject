@@ -5,8 +5,8 @@
    <tag></tag>
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
-   <dataFileGUID>662127e2-0a33-48a7-86bb-c3530a54b426</dataFileGUID>
-   <dataSourceUrl>C:\Users\Dell\git\GSMProject\Data Files\xlsx files\Roles.xlsx</dataSourceUrl>
+   <dataFileGUID>99196f78-1ec2-4df2-85fa-ea4a7321c129</dataFileGUID>
+   <dataSourceUrl>C:\Users\Dell\Documents\Roles.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>
