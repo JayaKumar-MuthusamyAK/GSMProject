@@ -26,4 +26,11 @@
       <masked>false</masked>
       <name>dashboard_exp_title</name>
    </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>6ce54693-f846-43bb-9713-2069b4901fa0</id>
+      <masked>false</masked>
+      <name>variable</name>
+   </variable>
 </TestCaseEntity>

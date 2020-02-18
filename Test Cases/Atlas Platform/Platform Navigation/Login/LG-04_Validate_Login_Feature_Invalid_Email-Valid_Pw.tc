@@ -6,14 +6,14 @@
    <comment></comment>
    <testCaseGuid>7335c147-6519-47f1-ac40-5d333a67a56b</testCaseGuid>
    <variable>
-      <defaultValue>findTestData('AMP_Y').getValue(1, 66)</defaultValue>
+      <defaultValue>findTestData('AMP_Y').getValue(1, 64)</defaultValue>
       <description></description>
       <id>1e19a745-66dc-4f17-9a1d-3003d849ee52</id>
       <masked>false</masked>
       <name>Email</name>
    </variable>
    <variable>
-      <defaultValue>findTestData('AMP_Y').getValue(2, 66)</defaultValue>
+      <defaultValue>findTestData('AMP_Y').getValue(2, 64)</defaultValue>
       <description></description>
       <id>27667ea7-c6b5-4929-a794-d65f314430d1</id>
       <masked>false</masked>

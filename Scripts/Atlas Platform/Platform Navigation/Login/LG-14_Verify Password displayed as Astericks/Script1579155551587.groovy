@@ -18,7 +18,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('http://dqfn4clx0bazt.cloudfront.net/')
+WebUI.navigateToUrl(GlobalVariable.URL)
 
 WebUI.setText(findTestObject('Login_Page/Page_/email address placeholder'), email, FailureHandling.CONTINUE_ON_FAILURE)
 

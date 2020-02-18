@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[text()='Email Address']/../div/div[2]/*/*</value>
+         <value>(//label[text()='Email Address']/../div/span/button)/*/*</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
